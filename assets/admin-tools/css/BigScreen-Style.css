@@ -301,11 +301,13 @@ html{
 .title-h2 i{
     display: inline-block;
     width: 2vh;
-    height: 2vh;
-    border: 1px solid #fff;
+    height: 1.6vh;
+    /* border: 1px solid #fff; */
     margin-left: 0.6vw;
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.4vh;
     vertical-align: middle;
+    background: url(../../img/title-ic.png) no-repeat;
+    background-size: 100% 100%;
 }
 .acBox-top{
     width: 100%;
@@ -364,7 +366,7 @@ html{
     line-height: 3vh;
     font-size: 0.8vw;
     font-weight: 500;
-    color: rgb(3, 228, 255);
+    color: #00ffff;
 }
 .list{
     width: 100%;
@@ -415,7 +417,7 @@ html{
 }
 .acBox-tablion{
     color: #0c1339;
-    background-color: #03e4ff;
+    background-color: #00ffff;
 }
 .acBox-botm{
     width: 100%;

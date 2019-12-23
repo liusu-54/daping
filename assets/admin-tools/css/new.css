@@ -109,7 +109,7 @@ html{
 .matrix-l .matrix-li{
     text-align: right;
     line-height: 5vh;
-    font-size: 0.7vw;
+    font-size: 0.6vw;
     padding-right: 0.5vw;
 }
 .matrix-l img{
@@ -120,7 +120,7 @@ html{
     /* border: 1px solid #fff; */
     /* border-radius: 50%; */
     top: 1.5vh;
-    left: 2vh;
+    left: 1.4vh;
 }
 .matrix-r img{
     position: absolute;
@@ -140,7 +140,7 @@ html{
     background: url("../../img/yy.png") no-repeat;
     background-size: 100% 100%;
     top: 0.25vh;
-    left: 0.4vw;
+    left: 0vw;
     animation: zhuan 10s;
     -moz-animation: zhuan 10s;	/* Firefox */
     -webkit-animation: zhuan 10s;	/* Safari éœï¿½ Chrome */
@@ -156,7 +156,7 @@ html{
 .matrix-r .matrix-li{
     text-align: left;
     line-height: 5vh;
-    font-size: 0.7vw;
+    font-size: 0.6vw;
     padding-left: 0.9vw;
 }
 .matrix-r .imgbox{
@@ -204,4 +204,15 @@ html{
 }
 .wbwx-tabBox .wbwx-tab-boxon{
     display: block;
+}
+.tx i{
+    display: inline-block;
+    width: 1.5vh;
+    height: 1.5vh;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.4vw;
+    background: url("../../img/tx.png") no-repeat;
+    background-size: 100% 100%;
 }

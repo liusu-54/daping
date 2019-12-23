@@ -1113,3 +1113,14 @@ html{
 
     display: none;
 }
+
+.vBoxBg{
+    background-image: url(../../img/vbox.gif);
+    background-size: cover;
+    width: 10.6vw;
+    height: 7vw;
+    position: absolute;
+    left: 31vw;
+    top: 2.4vw;
+    z-index: 101;
+}

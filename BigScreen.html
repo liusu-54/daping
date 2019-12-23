@@ -675,6 +675,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="vBoxBg"></div>
             </div>
         </div>
 
@@ -1433,6 +1434,13 @@
             $(".yqTabBlock .yqTab").eq(a).fadeIn().siblings().hide();
         }
     );
+
+    setInterval("num()",15000);
+    function num(){
+        $(".mpNum").numScroll({
+            time:500
+        });
+    }
 
 </script>
  <script>

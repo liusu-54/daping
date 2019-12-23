@@ -472,7 +472,9 @@ html{
 .clue-r .zf .list-t-b,.clue-r .zf .list-text{
     padding-left: 0.8vw;
 }
-
+.list-li{
+    padding-left: 0.3vw !important;
+}
 .intellectBox{
     position: absolute;
     width: 42vw;

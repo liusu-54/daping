@@ -716,6 +716,8 @@ html{
 }
 
 .listBox li{
+    padding-top: 1vh;
+    height: 6vh !important;
     padding: 0.6vh 0.5vw;
     border-bottom: 1px solid rgba(137,241,255,0.4);
 }

@@ -657,7 +657,7 @@
                 <div class="short-l ss">
                     <img src="./assets/img/dh1.gif" alt="">
                     <div class="shortText">智能采集</div>
-                    <div class="short-lbox ">
+                    <div class="short-lbox">
                         <div class="short-lbox-item short-item1">
                             <p>5G视频直播/录播</p>
                             <div class="sitem1-bg s1"></div>
@@ -1480,7 +1480,10 @@
         setTimeout(function () {
             $('.s2').css("animation","ss 1s")
         },4800);
-        $('.sitem1-bg').css("animation","none")
+        
+        setTimeout(function () {
+            $('.sitem1-bg').css("animation","none")
+        },5600);
     })
 
 
@@ -1508,7 +1511,7 @@
         },4800);
         $('.sitem1-bg').css("animation","none")
     }
-    window.setInterval(showalert, 5600);
+    window.setInterval(showalert, 6000);
 
 
    

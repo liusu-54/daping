@@ -1,17 +1,21 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 .acBox-tabli:hover,.wbwx-tabli:hover{
     cursor: pointer;
 }
 .hei4{
-    height: 14vh;
+    height: 14vh !important;
 }
 .hei3{
-    height: 10.5vh;
+    height: 10.5vh !important;
 }
 .hei5{
-    height: 17.5vh;
+    height: 17.5vh !important;
 }
 .hei2{
-    height: 7vh;
+    height: 9vh !important;
 }
 .wbwx .list-li{
     background-image: linear-gradient(to bottom, #226891 0%, #3a3066 100%);
@@ -35,7 +39,7 @@
     -webkit-line-clamp: 2;
 }
 .wbwxBox .hei4{
-    height: 16vh;
+    height: 16vh !important;
 }
 .acBox-top-l .list{
     border: 1px solid #ffa200;
@@ -65,4 +69,143 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+.news-img{
+    float: left;
+}
+.matrix{
+    width: 14vw;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    float: right;
+    margin-right: 0vw;
+}
+.matrix-l{
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+.matrix-r{
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+.matrix-li{
+    width: 100%;
+    height: 5vh;
+    /* border: 1px solid #fff; */
+    position: relative;
+}
+.matrix-li:hover{
+    cursor: pointer;
+    color: #07e7f7;
+    text-shadow: 0 0 30px #07e7f7,
+}
+.matrix-l .matrix-li:first-child{
+    margin-top: 2.5vh;
+}
+.matrix-l .matrix-li{
+    text-align: right;
+    line-height: 5vh;
+    font-size: 0.7vw;
+    padding-right: 0.5vw;
+}
+.matrix-l img{
+    position: absolute;
+    display: block;
+    width: 2vh;
+    height: 2vh;
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
+    top: 1.5vh;
+    left: 2vh;
+}
+.matrix-r img{
+    position: absolute;
+    display: block;
+    width: 2vh;
+    height: 2vh;
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
+    top: 1.5vh;
+    right: 1.3vh;
+}
+.matrix-l .imgbox{
+    position: absolute;
+    display: block;
+    width: 4.5vh;
+    height: 4.5vh;
+    background: url("../../img/yy.png") no-repeat;
+    background-size: 100% 100%;
+    top: 0.25vh;
+    left: 0.4vw;
+    animation: zhuan 10s;
+    -moz-animation: zhuan 10s;	/* Firefox */
+    -webkit-animation: zhuan 10s;	/* Safari éœï¿½ Chrome */
+    -o-animation: zhuan 10s;	/* Opera */
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+.matrix-r .matrix-li:first-child{
+    margin-top: 0vh;
+}
+.matrix-r .matrix-li{
+    text-align: left;
+    line-height: 5vh;
+    font-size: 0.7vw;
+    padding-left: 0.9vw;
+}
+.matrix-r .imgbox{
+    position: absolute;
+    display: block;
+    width: 4.5vh;
+    height: 4.5vh;
+    background: url("../../img/yy.png") no-repeat;
+    background-size: 100% 100%;
+    top: 0.25vh;
+    right: 0;
+    animation: zhuan 10s;
+    -moz-animation: zhuan 10s;	/* Firefox */
+    -webkit-animation: zhuan 10s;	/* Safari éœï¿½ Chrome */
+    -o-animation: zhuan 10s;	/* Opera */
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes zhuan
+{
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.matrix-l .imgbox:hover{
+    position: absolute;
+    display: block;
+    width: 4.5vh;
+    height: 4.5vh;
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
+    top: 0.25vh;
+    left: 0.4vw;
+    animation: none;
+}
+.matrix-r .imgbox:hover{
+    position: absolute;
+    display: block;
+    width: 4.5vh;
+    height: 4.5vh;
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
+    top: 0.25vh;
+    right: 0;
+    animation: none;
+}
+.wbwx-tab-box{
+    display: none;
+}
+.wbwx-tabBox .wbwx-tab-boxon{
+    display: block;
 }

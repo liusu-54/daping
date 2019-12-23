@@ -32,13 +32,34 @@
     <script src="assets/admin-tools/js/classie.js"></script>
     <script src="assets/admin-tools/js/dynamics.min.js"></script>
     <script src="assets/admin-tools/js/main.js"></script>
+    <script src="assets/admin-tools/js/jquery.vticker-min.js"></script>
 
   <!-- 大屏样式 -->
   <link rel="stylesheet" href="assets/admin-tools/css/BigScreen-Style.css">
   <link rel="stylesheet" href="assets/admin-tools/css/css-tch.css">
   <link rel="stylesheet" href="assets/admin-tools/css/video.css">
   <link rel="stylesheet" href="assets/admin-tools/css/new.css">
+  <style>
+    .news-container {
+        /* width:400px;
+        height:250px;
+        margin:0 auto;
+        margin-top:30px;
+        padding:0 10px;
+        border:5px solid #333 */
+    }
+    .news-container ul {
+        overflow:hidden;
+        width: 100%;
+        /* width:400px */
+    }
+    /* .news-container ul li {
+        display:block;
+        height:48px;
+        background:#fff
+    } */
 
+</style>
 </head>
 <script>
     setFontSize = function(size) {
@@ -53,6 +74,17 @@
         }
     }
 </script>
+	<script type="text/javascript">
+        $(function(){
+            $('.news-container').vTicker({
+                speed: 500,
+                pause: 2000,
+                animation: 'fade',
+                mousePause: false,
+                showItems: 4
+            });
+        });
+	</script>
   <body>
 
     <div class="bsTitle">
@@ -74,7 +106,7 @@
                     </div>
                 </div>
                 <h4 class="title-h4 scolor"><span class="titleSty sbg"></span>热点</h4>
-                <div class="list hei4 str1">
+                <div class="list hei4 news-container">
                     <ul class="rdc">
                         <li class="list-li">
                             <p class="list-text">习近平：在庆祝中华人民共中华人民共中华人民共中华人民共</p>
@@ -129,7 +161,7 @@
                 </div>
                 <div class="acTabBox">
                     <div class="ac-tabBox ac-tabBox-on">
-                        <div class="list hei5 str9">
+                        <div class="list hei5 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -177,7 +209,7 @@
                         </div>
                     </div>
                     <div class="ac-tabBox">
-                        <div class="list hei5 str9">
+                        <div class="list hei5 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -225,7 +257,7 @@
                         </div>
                     </div>
                     <div class="ac-tabBox">
-                        <div class="list hei5 str9">
+                        <div class="list hei5 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -288,7 +320,7 @@
             <div class="clue-l">
                 <div class="clue-l-box db">
                         <h4 class="title-h4 scolor"><span class="titleSty sbg"></span>党报头条</h4>
-                        <div class="list hei4 str2">
+                        <div class="list hei4 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -337,7 +369,7 @@
                 </div>
                 <div class="clue-l-box">
                         <h4 class="title-h4"><span class="titleSty"></span>微信头条</h4>
-                        <div class="list hei3 str3">
+                        <div class="list hei3 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -372,7 +404,7 @@
                 </div>
                 <div class="clue-l-box"> 
                         <h4 class="title-h4"><span class="titleSty"></span>APP头条</h4>
-                        <div class="list hei4 str4">
+                        <div class="list hei4 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -423,7 +455,7 @@
             <div class="clue-r">
                 <div class="clue-l-box zf">
                     <h4 class="title-h4"><span class="titleSty"></span>政府头条</h4>
-                    <div class="list hei4 str5">
+                    <div class="list hei4 news-container">
                         <ul>
                             <li class="list-li">
                                 <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -472,7 +504,7 @@
                 </div>
                 <div class="clue-l-box">
                     <h4 class="title-h4"><span class="titleSty"></span>网媒头条</h4>
-                    <div class="list hei3 str6">
+                    <div class="list hei3 news-container">
                         <ul>
                             <li class="list-li">
                                 <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -545,6 +577,77 @@
         <div class="news">
             <div class="news-top">
                 <img src="./assets/img/bz.png" alt="" class="news-img">
+                <div class="matrix">
+                    <div class="matrix-l">
+                        <ul>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="matrix-r">
+                        <ul>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                            <li class="matrix-li">
+                                <div class="imgbox"> 
+                                </div>
+                                <img src="./assets/img/zzic01.png" alt="">
+                                限速收集
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="news-botm">
                 <h2 class="title-h2">新媒播报<i></i></h2>
@@ -567,7 +670,8 @@
                     </div>
                     <div class="news-r">
                         <h4 class="title-h4 scolor"><span class="titleSty sbg"></span>本周最热文章</h4>
-                        <div class="hei2 str7">
+                        <div class="hei2 news-container">
+                            <ul>
                             <div class="news-s-top">
                                 <img src="" alt="" class="news-s-img">
                                 <div class="news-s-r">
@@ -608,6 +712,7 @@
                                     </div>
                                 </div>
                             </div>
+                        </ul>
                         </div>
                     </div>
                 </div>
@@ -624,7 +729,7 @@
                 <div class="wbwx-tab-box wbwx-tab-boxon">
                     <img src="" alt="" class="wbwx-img">
                     <div class="wbwxBox">
-                        <div class="list hei4 str801">
+                        <div class="list hei4 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -668,7 +773,7 @@
                 <div class="wbwx-tab-box">
                     <img src="" alt="" class="wbwx-img">
                     <div class="wbwxBox">
-                        <div class="list hei4 str801">
+                        <div class="list hei4 news-container">
                             <ul>
                                 <li class="list-li">
                                     <p class="list-text">习近平：在庆祝中华人民共</p>
@@ -1025,8 +1130,8 @@
             var a=$(this).index();
             $(this).addClass("acBox-tablion").siblings(".acBox-tabli").removeClass("acBox-tablion");
             $(".acTabBox .ac-tabBox").eq(a).fadeIn().siblings().hide();
-            $(".acTabBox .ac-tabBox").find('.hei5').liMarquee('destroy') 
-            $(".acTabBox .ac-tabBox").eq(a).find('.hei5').liMarquee({direction: 'up'})
+            // $(".acTabBox .ac-tabBox").find('.hei5').liMarquee('destroy') 
+            // $(".acTabBox .ac-tabBox").eq(a).find('.hei5').liMarquee({direction: 'up'})
         }
     );
     $(".wbwxtab .wbwx-tabli").click(
@@ -1034,43 +1139,43 @@
             var a=$(this).index();
             $(this).addClass("wbwx-tablion").siblings(".wbwx-tabli").removeClass("wbwx-tablion");
             $(".wbwx-tabBox .wbwx-tab-box").eq(a).fadeIn().siblings().hide();
-            $(".wbwx-tabBox .wbwx-tab-box").find('.hei4').liMarquee('destroy') 
-            $(".wbwx-tabBox .wbwx-tab-box").eq(a).find('.hei4').liMarquee({direction: 'up'})
+            // $(".wbwx-tabBox .wbwx-tab-box").find('.hei4').liMarquee('destroy') 
+            // $(".wbwx-tabBox .wbwx-tab-box").eq(a).find('.hei4').liMarquee({direction: 'up'})
             
         }
     );
 
 </script>
  <script>
-    $(window).load(function () {
-        $('.str1').liMarquee({
-            direction: 'up'
-        });
-        $('.str2').liMarquee({
-            direction: 'up'
-        });
-        $('.str3').liMarquee({
-            direction: 'up'
-        });
-        $('.str4').liMarquee({
-            direction: 'up'
-        });
-        $('.str5').liMarquee({
-            direction: 'up'
-        });
-        $('.str6').liMarquee({
-            direction: 'up'
-        });
-        $('.str7').liMarquee({
-            direction: 'up'
-        });
-        $('.str801').liMarquee({
-            direction: 'up'
-        });
-        $('.str9').liMarquee({
-            direction: 'up'
-        });
-    });
+    // $(window).load(function () {
+    //     $('.str1').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str2').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str3').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str4').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str5').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str6').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str7').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str801').liMarquee({
+    //         direction: 'up'
+    //     });
+    //     $('.str9').liMarquee({
+    //         direction: 'up'
+    //     });
+    // });
 </script>
 <script>
     /*关键词-begin*/

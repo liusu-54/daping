@@ -412,6 +412,15 @@ html{
     float: left;
     border-radius: 1vh;
 }
+.acBox-tabli:hover{
+    cursor: pointer;
+}
+.ac-tabBox{
+    display: none;
+}
+.acTabBox .ac-tabBox-on{
+    display: block;
+}
 .acBox-tablion{
     color: #0c1339;
     background-color: #03e4ff;
@@ -593,4 +602,25 @@ html{
     position: absolute;
     top: 1vh;
     right: 1.8vw;
+}
+.wbwx-tabli{
+    color: #fff;
+    height: 3vh;
+    line-height: 3vh;
+    width: 2.5vw;
+}
+.wbwx-tabli:hover{
+    cursor: pointer;
+}
+/* .wbwx-tabli:first-child{
+    border-right: 1px solid #00ffff;
+} */
+.wbwx-tablion{
+    color: #00ffff;
+}
+.wbwx-tab-box{
+    display: none;
+}
+.wbwx-tabBox .wbwx-tab-boxon{
+    display: block;
 }

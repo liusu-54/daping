@@ -8,6 +8,11 @@ a{
     padding: 0;
 }
 
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .dis{
     display: none;
 }
@@ -603,7 +608,7 @@ html{
     top: 71.82vh;
     width: 27.49vw;
     height: 26.57vh;
-    background: rgba(255,0,0,0.5);
+
 }
 
 .yqBox .yqNav div{
@@ -624,7 +629,7 @@ html{
 }
 
 .yqBox .yqTabBox{
-    border: 1px solid blue;
+
 }
 
 .over{
@@ -649,7 +654,6 @@ html{
     text-align: center;
     line-height: 1.8vh;
     border-radius: 4px;
-    background-color: #fc0001;
     display: block;
     float: left;
     color: white;
@@ -822,8 +826,8 @@ html{
 .stack__item li div:nth-child(2){
     font-size: 0.55vw;
     color: #fff;
-    width: 60%;
     float: left;
+    margin-left: 0.6vw;
 }
 
 .stack__item li{
@@ -836,8 +840,8 @@ html{
 
 .controls{
     position: absolute;
-    left: 7.7vw;
-    bottom: 8.1vw;
+    left: 5.9vw;
+    bottom: 6.6vw;
     z-index: 301;
 }
 
@@ -887,13 +891,6 @@ html{
     background-color: rgb(8, 71, 62);
 }
 
-.stack__item h3{
-    float: left;
-    margin-left: 0.5vw;
-    margin-top: 0.2vw;
-    font-size: 0.7vw;
-}
-
 .button--sonar{
     background-color: rgba(5, 15, 40, 0.89);
     border: 1px solid #28fce6;
@@ -918,11 +915,29 @@ html{
 }
 
 .stack__item .stackHead{
-    background-image: linear-gradient(-90deg, rgba(40,252,232,0), rgba(40,252,232,1));
+    background-image: linear-gradient(-90deg, rgba(3,228,255,0), rgba(3,228,255,1));
     color: rgba(19, 21, 62, 1);
     padding-left: 0.2vw;
     height: 1.2vw;
     line-height: 0.8vw;
     font-size: 0.8vw;
     font-weight: bold;
+}
+
+.stack__item .borBottom{
+    border-bottom: 1px dashed rgba(255,255,255,0.5);
+}
+
+.stack__item li p{
+    font-size: 0.60vw;
+    color: #fff;
+    padding-left: 0.6vw;
+    font-weight: normal;
+    width: 95%;
+}
+
+.button--sonar{
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 0;
 }

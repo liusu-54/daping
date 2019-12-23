@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pt-4v{padding-top: 4vh !important;}
+.pt-6v{padding-top: 6vh !important;}
+.pb-4v{padding-bottom: 4vh !important;}
+.pl-4v{padding-left: 2vw !important;}
+.pr-4v{padding-right: 2vw !important;}
+.pt-3v{padding-top: 3vh !important;}
+.pb-3v{padding-bottom: 3vh !important;}
+.pl-3v{padding-left: 1.5vw !important;}
+.pr-3v{padding-right:1.5vw !important;}
+*{
+  outline: none !important;
+  box-sizing: border-box;
+}
+.clearfix:before{
+  display: table;
+  content: " ";
+}
+.clearfix:after{
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*通用属性*/
+  .h50{height: 50% !important;}
+  .h60{height: 60% !important;}
+  .h70{height: 70% !important;}
+  .h70{height: 70% !important;}
+  .h30{height: 30% !important;}
+  .h100{height: 100% !important;}
+  .w40{width: 40% !important;}
+  .w50{width: 50% !important;}
+  .w60{width: 60% !important;}
+  .w70{width: 70% !important;}
+  .w100{width: 100% !important;}
+  .hauto{height: auto !important;}
+
+
+.fl-l{
+  float: left !important;
+}
+.fl-r{
+  float: right !important;
+}
+
+.g-box {
+  /*background: url(../images/cankao.png) center center #000 no-repeat;*/
+  background-color: rgba(1,7,21,0.8);
+  background-size: 100% 100%;
+	position: relative;
+  height: 100%;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+  z-index: 500;
+}
+
+.tch-box{
+  top:13vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 1vh 0.8vw;
+  overflow-y: auto;
+  background: #020c25;
+  border-top-left-radius:0.5vw;
+  border-bottom-left-radius:0.5vw;
+}
+  .tch-title{
+    border-bottom: 1px solid #00eaff; 
+  }
+  .tch-title h2{
+    color: #fff;
+    font-size: 1.4vw;
+    line-height: 4vh;
+    padding: 1vh 0vw;
+    
+  }
+
+  .tch-title p{
+    font-size: 0.6vw;
+    color: #ccc;
+    padding-bottom: 1vh;
+    margin: 0;
+  }
+    .tch-title p span{
+      padding: 0 0.5vw;
+    }
+
+  .tch-body{
+    text-align: center;
+
+  }
+    .tch-body p{
+      text-align: left;
+      color: #fff;
+      font-size: 0.8vw;
+      line-height: 1.4vw;
+      text-indent: 2em;
+      margin: 1vh 0vw;
+    }
+    .tch-body img{
+      width: 60%;
+      margin: 0 auto
+    }
+
+
+    /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+    .scrollbar::-webkit-scrollbar{
+        width: 6px;
+        /*height: 8px;*/
+        background-color: #2c2d31;
+    }
+    /*定义滚动条的轨道，内阴影及圆角*/
+    .scrollbar::-webkit-scrollbar-track{
+       /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+        border-radius: 4px;
+        background-color: #101626;
+    }
+    /*定义滑块，内阴影及圆角*/
+    .scrollbar::-webkit-scrollbar-thumb{
+        width: 4px;
+        height: 5px;
+        border-radius: 8px;
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+        background-color: #131f3d;
+    }
+    .close-tch{
+      width: 2vw;
+      height: 2vw;
+      outline: none;
+      position: absolute;
+      right: 4vw;
+      top:5vh;
+      cursor: pointer;
+
+    }
+    .close-tch img{
+      width: 100%;
+      height: 100%;
+      
+
+    }
+
+
+/*标题*/
+.titleh-first{
+  position: relative;
+  color: #00eaff;
+  padding: 1vh 0vw;
+  padding-top: 2vh;
+  top:0%;
+  right: 0%;
+  z-index: 2000;
+
+}
+.titleh-first h5{
+  width: 14vw;
+  position: relative;
+  margin: 0 auto;
+  font-size: 1.4vw;
+  color: #00eaff;
+  font-weight: normal;
+  text-align: center;
+  background-size: contain;
+  text-shadow: 0px 0px 15px #0b0f1b;
+}
+.titleh-first h5:before{
+   position: absolute;
+   left: -17.8vw;
+   display: block;
+   content: "";
+   width: 20vw;
+   height: 3vh;
+   top:0.2vh;
+   background: url(../../img/title-left.png) center right no-repeat;
+   background-size: contain;
+}
+.titleh-first h5:after{
+   position: absolute;
+   left: 12vw;
+   display: block;
+   content: "";
+   width: 20vw;
+   height: 3vh;
+   top:0.2vh;
+   background: url(../../img/title-right.png) center left no-repeat;
+   background-size: contain;
+}
+/*列表*/
+
+/*正负面图标*/
+
+
+  .zhengfu-z{
+    /*background-color: #00c27b !important;*/
+    border-color:#00c27b !important;
+    color: #00c27b !important; 
+  }
+  .zhengfu-zx{
+    /*background-color: #05f9f9 !important;*/
+    border-color:#05f9f9 !important; 
+    color: #05f9f9 !important;
+  }
+  .zhengfu-f{
+   /* background-color: #f30512 !important;*/
+    border-color:#f30512 !important; 
+    color: #f30512 !important;
+  }
+
+  .list-tch{
+    width: 100%;
+    padding-top: 2vh;
+  }
+    .list-box{
+      width: 33.3%;
+      float: left;
+      padding: 0vh 0.5vw;
+    }
+
+    .title-list{
+      color: #fff;
+      padding-left: 1vw;
+      font-size: 1.2vw;
+      height: 10vh;
+      line-height: 10vh;
+      border-left: 0.4vw solid #ccc;
+      border-bottom: 1px solid #505e78 !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /*列表*/
+    .news-list{
+      padding: 1vh 0.5vw;
+
+    }
+
+      .news-list li{
+        padding: 1vh 0vw;
+        border-bottom: 1px solid #505e78;
+      
+      }
+        .news-list li h4{
+          font-size: 1vw;
+          line-height: 2.5vh;
+          color: #fff;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .news-list li .time{
+          font-size: 0.6vw;
+          color: #b3bdc7;
+          margin: 0.5vh 0vh;
+        }
+        .news-list li p.form{
+          font-size: 0.6vw;
+          color: #79ced3;
+          margin: 0.5vh 0vh;
+          margin-bottom: 0vh;
+
+        }
+        .news-list li p.form span{
+          padding: 0 0.2vw;
+          display: inline-block;
+          
+        }
+       /* .news-list li p.form span:first-child{
+          padding-left: 0;
+
+        }*/
+        .bg-2{
+          background: #0a1a33;
+        }
+        .ciyun-list{
+          float: left;
+          width: 50%;
+          padding: 1vh 0.5vw;
+        }
+        .ciyun-list li{
+          color: #fff;
+          font-size: 0.8vw;
+          padding-right: 3vw;
+          position: relative;
+          padding: 1vh 0vw;
+          padding-right: 3vw;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+        }
+        .ciyun-list li .num-list{
+          width: 1vw;
+          height: 2vh;
+          float: left;
+          background-color: #0f4955;
+          border-radius: 4px;
+          margin-right: 0.5vw;
+          margin-left: 0.5vw;
+          text-align: center;
+
+        }
+        .ciyun-list li span{
+          position: absolute;
+          right: 0.5vw;
+        }
+
+         .ciyun-list li:nth-child(odd){
+          background-color: rgba(0,234,255,0.1);
+         }
+         /*.ciyun-list li:nth-child(odd){
+          background-color: transparent;
+         }*/
+
+          .ciyun-icon li:nth-child(1) .num-list{
+            background-color: #fe0000;
+          }
+          .ciyun-icon li:nth-child(2) .num-list{
+            background-color: #fb950d;
+          }
+          .ciyun-icon li:nth-child(3) .num-list{
+            background-color: #28ff00;
+          }
+    
+
+/*入驻机构*/
+.jigou-box{
+  width: 50%;
+  float: left;
+  padding: 0vh 0.3vw;
+}
+
+  .jigou-box .title-list{
+       height: 6vh;
+      line-height: 6vh;
+      font-weight: normal;
+      background-color: #132940;
+      border-left: #8aedff 0.2vw solid;
+      border-bottom: transparent !important;
+
+  }
+
+  .jigou-box .title-list span{
+    float: right;
+    margin-right: 1vw;
+    color: #ff8000;
+  }
+
+  .jigou-list{
+    padding: 2vh 1vw;
+    padding-bottom: 4vh;
+
+  }
+    .jigou-list li{
+      width: 50%;
+      float: left;
+      border-bottom: 1px solid #505e78;
+    }
+      .jigou-list li a{
+        display: block;
+        font-size: 0.8vw;
+        padding: 1vh 1vw;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+
+/*选项卡*/
+.tab-button-list{
+  float: left;
+  width: 12%;
+}
+
+  .tab-button-list li a{
+    display: block;
+    color: #fff;
+    width: 100%;
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 0.8vw;
+    margin: 0.5vh 0vw;
+    text-align: center;
+    background: #062539;
+  }
+  .tab-button-list li.active a{
+    background: #0b555e;
+    border: 1px solid #00eaff;
+  }
+  .tab-button-list li a:hover{
+    background: #0b555e;
+    border: 1px solid #00eaff;
+  }
+
+  .tab-content{
+    float: left;
+    width: 88%;
+    padding: 0vh 1vw;
+  }
+
+    .tab-content .position-title{
+       border: 1px solid #505e78;
+       position: relative;
+       background-color: #091b33;
+
+    }
+      .tab-content .position-title h2{
+        height: 8vh;
+        line-height: 8vh;
+        padding-left:4vw;
+        font-weight: normal;
+        background: url(../../img/potn.png) left center no-repeat;
+        background-size: auto 50%;
+        background-position: 1.5vw center;
+        font-size: 1vw;
+        color: #fff;
+      
+      } 
+      .tab-content .position-title .faga-num{
+        position: absolute;
+        right: 1vw;
+        top:1.5vh;
+
+      }
+
+      .faga-num h6{
+        font-size: 1.2vw;
+        color: #00eaff;
+
+      }
+      .faga-num p{
+        font-size: 0.6vw;
+        margin: 0;
+        color: #fff;
+        text-align: right;
+
+        
+      }
+
+      .tab-pane .news-list li h4{
+        font-weight: normal;
+        font-size: 0.9vw;
+        padding-right: 4vw;
+        padding-left:0.5vw; 
+        position: relative;
+      }
+
+        .tab-pane .news-list li .time{
+          font-size: 0.6vw;
+          position: absolute;
+          right: 0vw;
+          color: #b3bdc7;
+          margin: 0.5vh 0vh;
+        }
+        .tab-pane .news-list li .form span{
+           padding: 0 0.5vw;
+        }
+.brand-box{
+
+}
+.brand-box h2{
+  font-size: 1vw;
+  color: #00eaff;
+  height: 6vh;
+  line-height: 6vh;
+  border-bottom: 1px solid #505e78;
+  padding-left: 0.8vw;
+
+}
+.brand-list{
+  padding: 1vh 0vw;
+
+}
+
+.brand-list li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 1vh 0.7vw;
+
+}
+
+.brand-list li img{
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+
+
+}
+.brand-list li p{
+  color: #fff;
+  font-size: 0.7vw;
+  margin: 0;
+  padding-top: 1vh;
+
+}

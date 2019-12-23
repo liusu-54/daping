@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <title>齐鲁智慧媒体云</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <!--<link rel="shortcut icon" href="assets/img/favicon.ico">-->
+
+  <script src="vendor/plugins/jquery-2.1.1.min.js"></script>
+  <script src="vendor/plugins/jquery.svg3dtagcloud.min.js"></script>
+  <!--echarts -->
+  <script type="text/javascript" src="vendor/plugins/eCharts/echarts.js"></script>
+
+  <script type="text/javascript" src="vendor/plugins/eCharts/echarts-gl.js"></script>
+
+  <script src="vendor/plugins/jquery.numscroll.js"></script>
+  <script src="echarts/shandong.js"></script>
+
+  <!-- 大屏样式 -->
+  <link rel="stylesheet" href="assets/admin-tools/css/BigScreen-Style.css">
+  <link rel="stylesheet" href="assets/admin-tools/css/css-tch.css">
+
+</head>
+<script>
+    setFontSize = function(size) {
+        var windowWidth = document.body.clientWidth;
+        console.log(windowWidth);
+        if (windowWidth <= 1920) {
+            return size * windowWidth / 3200;
+        } else if (windowWidth <= 3850 && windowWidth > 1920) {
+            return size * windowWidth / 3200;
+        } else if (windowWidth <= 7700 && windowWidth > 3840) {
+            return size * windowWidth / 3200;
+        }
+    }
+</script>
+  <body>
+
+    <div class="bsTitle">
+        <h1 class="title">山东省新媒体大平台</h1>
+        <h2 class="title">(齐鲁智慧媒体云)</h2>
+    </div>
+    <div class="bs-bg">
+
+        <div class="activeBox">
+        <h2 class="title-h2">领导活动<i></i></h2>
+        <div class="acBox-top">
+            <div class="acBox-top-l">
+                <div class="acBox-top-lt">
+                    <img src="" alt="" class="ac-img">
+                    <div class="imgbox-r">
+                        <h2>习近平</h2>
+                        <p>中国共产党中央委员会总书记</p>
+                        <p>中华人民共和国主席</p>
+                    </div>
+                </div>
+                <h4 class="title-h4">热点</h4>
+                <div class="list">
+                    <ul class="rdc">
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acBox-top-r">
+                <div class="acBox-tab">
+                    <span class="acBox-tabli acBox-tablion">重要讲话</span>
+                    <span class="acBox-tabli">出席会议</span>
+                    <span class="acBox-tabli">考察调研</span>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                        <li class="list-li">
+                            <p class="list-text">习近平：在庆祝中华人民共</p>
+                            <div class="list-t-b">
+                                人民网韩文版
+                                <span>2019-12-11</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="acBox-botm">
+            <h4 class="title-h4">热点</h4>
+            <div class="echarts-ac">
+
+            </div>
+        </div>
+        </div>
+        <div class="clueBox">
+            <h2 class="title-h2">线索搜集<i></i></h2>
+            <div class="clue-l">
+                <div class="clue-l-box db">
+                        <h4 class="title-h4">党报头条</h4>
+                        <div class="list">
+                            <ul>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="clue-l-box">
+                        <h4 class="title-h4">微信头条</h4>
+                        <div class="list">
+                            <ul>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="clue-l-box"> 
+                        <h4 class="title-h4">APP头条</h4>
+                        <div class="list">
+                            <ul>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                    <p class="list-text">习近平：在庆祝中华人民共</p>
+                                    <div class="list-t-b">
+                                        人民网韩文版
+                                        <span>2019-12-11</span>
+                                    </div>
+                                </li>
+                                <li class="list-li">
+                                        <p class="list-text">习近平：在庆祝中华人民共</p>
+                                        <div class="list-t-b">
+                                            人民网韩文版
+                                            <span>2019-12-11</span>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="clue-r">
+                <div class="clue-l-box zf">
+                    <h4 class="title-h4">政府头条</h4>
+                    <div class="list">
+                        <ul>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clue-l-box">
+                    <h4 class="title-h4">网媒头条</h4>
+                    <div class="list">
+                        <ul>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                            <li class="list-li">
+                                <p class="list-text">习近平：在庆祝中华人民共</p>
+                                <div class="list-t-b">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intellectBox">
+            <h2 class="title-h2">智能发布</h2>
+            <div class="vBox">
+                <div class="vBox-item">
+
+                </div>
+                <div class="vBox-item">
+
+                </div>
+                <div class="vBox-item">
+
+                </div>
+                <div class="vBox-item">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="news-top">
+                <img src="" alt="" class="news-img">
+            </div>
+            <div class="news-botm">
+                <h2 class="title-h2">新媒播报</h2>
+                <div class="news-botm-box">
+                    <div class="news-l">
+                        <h4 class="title-h4">热点</h4>
+                        <div class="news-s-top">
+                            <img src="" alt="" class="news-s-img">
+                            <div class="news-s-r">
+                                <p>山东省属企业今</p>
+                                <div class="news-s-rb">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-text">
+                                山东省属企业今山东省属企业今山东省属企业今山东省属企业今
+                        </div>
+                    </div>
+                    <div class="news-r">
+                        <h4 class="title-h4">热点</h4>
+                        <div class="news-s-top">
+                            <img src="" alt="" class="news-s-img">
+                            <div class="news-s-r">
+                                <p>山东省属企业今</p>
+                                <div class="news-s-rb">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-s-top">
+                            <img src="" alt="" class="news-s-img">
+                            <div class="news-s-r">
+                                <p>山东省属企业今</p>
+                                <div class="news-s-rb">
+                                    人民网韩文版
+                                    <span>2019-12-11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wbwx">
+            <h2 class="title-h2">智能发布</h2>
+            <div class="wbwx-tabBox">
+                <img src="" alt="" class="wbwx-img">
+                <div class="wbwxBox">
+                        <div class="list">
+                                <ul>
+                                    <li class="list-li">
+                                        <p class="list-text">习近平：在庆祝中华人民共</p>
+                                        <div class="list-t-b">
+                                            人民网韩文版
+                                            <span>2019-12-11</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-li">
+                                        <p class="list-text">习近平：在庆祝中华人民共</p>
+                                        <div class="list-t-b">
+                                            人民网韩文版
+                                            <span>2019-12-11</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-li">
+                                        <p class="list-text">习近平：在庆祝中华人民共</p>
+                                        <div class="list-t-b">
+                                            人民网韩文版
+                                            <span>2019-12-11</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-li">
+                                        <p class="list-text">习近平：在庆祝中华人民共</p>
+                                        <div class="list-t-b">
+                                            人民网韩文版
+                                            <span>2019-12-11</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bsFrame bgBox">
+            <h2><span class="titleSty"></span>词云</h2>
+            <div class="tag-cloud chartHeight"></div>
+            <div class="wordBg1"></div>
+        </div>
+
+
+        <div class="tabBox">
+            <div class="bsFrame mpBox">
+                <div class="mapBtn1"><p>记者地图</p></div>
+                <div class="mapBtn2"><p>记者地图</p></div>
+                <div class="yuanBox1">
+                    <p>大众报业</p>
+                    <div class="yuan1"></div>
+                </div>
+                <div class="yuanBox2">
+                    <p>广电传媒</p>
+                    <div class="yuan1"></div>
+                </div>
+                <div class="mpBor mpBor1">
+                    <div>
+                        <div class="mpText">入驻机构数</div>
+                        <div class="mpNum">369569</div>
+                    </div>
+                </div>
+                <div class="mpBor mpBor2">
+                    <div>
+                        <div class="mpText">入驻机构数</div>
+                        <div class="mpNum">369569</div>
+                    </div>
+                </div>
+                <div class="mpBor mpBor3">
+                    <div>
+                        <div class="mpText">入驻机构数</div>
+                        <div class="mpNum">369569</div>
+                    </div>
+                </div>
+                <div class="chartHeight5"  id="map4"></div>
+                <script src="echarts/echarts-map4.js"></script>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+  </body>
+
+<!-- BEGIN: PAGE SCRIPTS -->
+
+<!-- 跑马灯插件引用 -->
+<link rel="stylesheet" href="vendor/plugins/liMarquee.css">
+<script src="vendor/plugins/jquery.liMarquee.js"></script>
+
+<!-- 大屏JS -->
+<script src="assets/admin-tools/js/BigScreen.js"></script>
+
+<script>
+    /*关键词-begin*/
+    $( document ).ready( function() {
+        var entries = [
+            { label: '山东', url: '#', target: '_top' },
+            { label: 'Bootstrap', url: '#', target: '_top' },
+            { label: '济南', url: '#', target: '_top' },
+            { label: '实时发布', url: '#', target: '_top' },
+            { label: '微博', url: '#', target: '_top' },
+            { label: '官网', url: '#', target: '_top' },
+            { label: 'three.js', url: '#', target: '_top' },
+            { label: '统计', url: '#', target: '_top' },
+            { label: '传播概况', url: '#', target: '_top' },
+            { label: '传播追踪', url: '#', target: '_top' },
+            { label: '传播分布', url: '#', target: '_top' },
+            { label: '传播数据分析系统', url: '#', target: '_top' },
+            { label: '在线稿件', url: '#', target: '_top' },
+            { label: '外媒关注', url: '#', target: '_top' },
+            { label: '舆情分析', url: '#', target: '_top' },
+            { label: '传播分布', url: '#', target: '_top' },
+            { label: '实时统计', url: '#', target: '_top' },
+            { label: '热门插件', url: '#', target: '_top' },
+            { label: '关键词', url: '#', target: '_top' },
+        ];
+
+        var settings = {
+
+            entries: entries,
+            width: '100%',
+            height: '50%',
+            radius: '60%',
+            radiusMin:'20%',
+            bgDraw: true,
+            bgColor: 'none',
+            opacityOver: 1.00,
+            opacityOut: 0.2,
+            opacitySpeed: 6,
+            fov: 800,
+            speed: 0.3,
+            fontFamily: '微软雅黑',
+            fontSize: '0.6vw',
+            fontColor: '#fff',
+            fontWeight: 'normal',//bold
+            fontStyle: 'normal',//italic
+            fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+            fontToUpperCase: true
+
+        };
+
+        //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+        $( '.tag-cloud' ).svg3DTagCloud( settings );
+
+    });
+    /*关键词-end*/
+</script>
+
+
+</html>

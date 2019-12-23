@@ -835,13 +835,14 @@
         <div class="wbwx">
             <h2 class="title-h4">
                 <div class="wbwxtab">
-                    <span class="wbwx-tabli wbwx-tablion">微博  |</span>
-                    <span class="wbwx-tabli">微信</span>
+                    <span class="wbwx-tabli wbwx-tablion">微信  |</span>
+                    <span class="wbwx-tabli">微博</span>
                 </div>
             </h2>
             <div class="wbwx-tabBox">
                 <div class="wbwx-tab-box wbwx-tab-boxon">
-                    <img src="" alt="" class="wbwx-img">
+                    <div class="weixin"></div>
+                    <div class="weiY"></div>
                     <div class="wbwxBox">
                         <div class="list hei4 news-container">
                             <ul>
@@ -895,7 +896,8 @@
                     </div>
                 </div>
                 <div class="wbwx-tab-box">
-                    <img src="" alt="" class="wbwx-img">
+                    <div class="weibo"></div>
+                    <div class="weiY"></div>
                     <div class="wbwxBox">
                         <div class="list hei4 news-container">
                             <ul>
@@ -1410,6 +1412,13 @@
             var a=$(this).index();
             $(this).addClass("wbwx-tablion").siblings(".wbwx-tabli").removeClass("wbwx-tablion");
             $(".wbwx-tabBox .wbwx-tab-box").eq(a).fadeIn().siblings().hide();
+            if(a==0){
+                $(".wbwx-tabBox .weixin").fadeIn();
+                $(".wbwx-tabBox .weibo").hide();
+            }else {
+                $(".wbwx-tabBox .weibo").fadeIn();
+                $(".wbwx-tabBox .weixin").hide();
+            }
             // $(".wbwx-tabBox .wbwx-tab-box").find('.hei4').liMarquee('destroy') 
             // $(".wbwx-tabBox .wbwx-tab-box").eq(a).find('.hei4').liMarquee({direction: 'up'})
             

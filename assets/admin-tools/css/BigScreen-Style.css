@@ -252,7 +252,7 @@ html{
     font-size: 0.6vw;
     width: 5.7vw;
     text-align: center;
-    margin-top: 0.2vw;
+    margin-top: 0.35vw;
     font-family: Digital-7 Mono;
 }
 
@@ -765,4 +765,130 @@ html{
 }
 .wbwx-tablion{
     color: #00ffff;
+}
+
+.yqTabBox .yqTab .zzLeft{
+    float: left;
+    width: 44%;
+    height: 13.6vw;
+}
+
+.yqTabBox .yqTab .zzRight{
+    float: right;
+    width: 56%;
+    height: 13.6vw;
+}
+
+.iframe-box {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.stack__item li div:nth-child(1){
+    font-size: 0.55vw;
+    color: #00e5ff;
+    width: 40%;
+    float: left;
+    padding-left: 0.6vw;
+}
+
+.stack__item li div:nth-child(2){
+    font-size: 0.55vw;
+    color: #fff;
+    width: 60%;
+    float: left;
+}
+
+.stack__item li{
+    padding: 0.5vh 0;
+}
+
+.numSty{
+    color: #f98307 !important;
+}
+
+.controls{
+    position: absolute;
+    left: 7.7vw;
+    bottom: 8.1vw;
+    z-index: 301;
+}
+
+.tSearch{
+    width: 5.5vw;
+    height: 1.2vw;
+    position: absolute;
+    right: 3vw;
+    top: 0.2vw;
+    background-color: transparent;
+    border: 1px solid #fff;
+    z-index: 302;
+    box-shadow: 0 0 25px rgba(40, 255, 234,0.3);
+    color: #fff;
+    font-size: 0.7vw;
+    padding-left: 0.5vw;
+}
+
+.tSearch::-webkit-input-placeholder{
+    font-size: 0.5vw;
+}
+
+.tBtn{
+    width: 1.5vw;
+    height: 1.2vw;
+    position: absolute;
+    right: 1.5vw;
+    top: 0.2vw;
+    border: none;
+    background-color: rgb(16, 191, 174);
+    box-shadow: 0 0 25px rgba(40, 255, 234,0.3);
+    z-index: 302;
+    color: #fff;
+    font-size: 0.5vw;
+    cursor: pointer;
+}
+
+.tTel{
+    position: absolute;
+    right: 8.8vw;
+    top: 0.5vw;
+    color: #f98307;
+    font-size: 0.5vw;
+}
+
+.tBtn:active{
+    background-color: rgb(8, 71, 62);
+}
+
+.stack__item h2{
+    float: left;
+    margin-left: 0.5vw;
+}
+
+.stack__item h3{
+    float: left;
+    margin-left: 0.5vw;
+    margin-top: 0.2vw;
+    font-size: 0.7vw;
+}
+
+.button--sonar{
+    background-color: rgba(5, 15, 40, 0.89);
+    border: 1px solid #28fce6;
+}
+
+.stack--yuda{
+    transform: perspective(500px) rotateY(15deg);
+
+}
+.stack__item{
+    width: 10vw;
+    height: 13.1vw;
+    border: 1px solid #26fbe9;
+    background-color: rgba(5, 15, 40, 0.89);
+    text-align: left;
+}
+.stack{
+    z-index: 300;
 }

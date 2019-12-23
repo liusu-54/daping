@@ -276,13 +276,12 @@ html{
 }
 .short-box{
     width: 100%;
-    height: 23vh;
+    height: 22vh;
 }
 .short-l{
     float: left;
     width: 17vw;
     height: 100%;
-    border: 1px solid #fff;
     font-size: 0.8vw;
     color: #ffa200;
     text-align: center;

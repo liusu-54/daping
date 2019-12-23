@@ -28,3 +28,32 @@
 .wbwxBox .hei4{
     height: 16vh;
 }
+.acBox-top-l .list{
+    border: 1px solid #ffa200;
+    box-shadow: 0 0 10px #ffa200;
+}
+.acBox-top-l .list-li{
+    border-bottom: 1px solid #ffa200;
+}
+.db .list-text::before{
+    content: " ";
+    display: block;
+    width: 0.3vw;
+    height: 0.3vw;
+    background-color: #ef0037;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.zf .list-text::before{
+    content: " ";
+    display: block;
+    width: 0.3vw;
+    height: 0.3vw;
+    background-color: #14deeb;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}

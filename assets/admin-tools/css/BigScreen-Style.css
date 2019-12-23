@@ -471,7 +471,7 @@ html{
     width: 42vw;
     left: 29vw;
     height: 17vh;
-    bottom: 1.5vh;
+    bottom: 0vh;
     border: 1px solid #fff;
 }
 .vBox{
@@ -509,7 +509,7 @@ html{
     display: block;
     width: 9vw;
     height: 21vh;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     margin-top: 2vh;
     margin-left: 2vw;
 }
@@ -719,7 +719,7 @@ html{
     float: right;
 }
 
-.db .list-text::before {   
+/* .db .list-text::before {   
     content: " ";   
     display: block;
     width: 0.5vw;
@@ -728,7 +728,7 @@ html{
     top: 0;
     left: 0;
     color: #FF003C;
-  }   
+  }    */
   
 
 .item-video{

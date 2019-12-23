@@ -13,3 +13,47 @@
 .hei2{
     height: 7vh;
 }
+.wbwx .list-li{
+    background-image: linear-gradient(to bottom, #226891 0%, #3a3066 100%);
+}
+.scolor{
+    color: #ffa200;
+}
+.sbg{
+    background-color: #ffa200;
+}
+.list-li{
+    padding-left: 0.2vw;
+}
+.wbwxBox .hei4{
+    height: 16vh;
+}
+.acBox-top-l .list{
+    border: 1px solid #ffa200;
+    box-shadow: 0 0 10px #ffa200;
+}
+.acBox-top-l .list-li{
+    border-bottom: 1px solid #ffa200;
+}
+.db .list-text::before{
+    content: " ";
+    display: block;
+    width: 0.3vw;
+    height: 0.3vw;
+    background-color: #ef0037;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.zf .list-text::before{
+    content: " ";
+    display: block;
+    width: 0.3vw;
+    height: 0.3vw;
+    background-color: #14deeb;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}

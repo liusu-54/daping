@@ -594,3 +594,125 @@ html{
     top: 1vh;
     right: 1.8vw;
 }
+
+.yqBox{
+    position: absolute;
+    right: 0.9vw;
+    top: 71.82vh;
+    width: 27.49vw;
+    height: 26.57vh;
+    background: rgba(255,0,0,0.5);
+}
+
+.yqBox .yqNav div{
+    float: left;
+    color: #fff;
+    font-size: 0.75vw;
+}
+
+.yqBox .yqNav span{
+    float: left;
+    color: #03e4ff;
+    font-size: 0.7vw;
+    margin: 0 0.2vw;
+}
+
+.yqBox .yqNav{
+    margin-top: 0.3vw;
+}
+
+.yqBox .yqTabBox{
+    border: 1px solid blue;
+}
+
+.over{
+    overflow: unset;
+}
+
+.zx{
+    width: 1.8vw;
+    height: 1.8vh;
+    text-align: center;
+    line-height: 1.8vh;
+    border-radius: 4px;
+    background-color: #0baec8;
+    display: block;
+    float: left;
+    color: white;
+}
+
+.fm{
+    width: 1.8vw;
+    height: 1.8vh;
+    text-align: center;
+    line-height: 1.8vh;
+    border-radius: 4px;
+    background-color: #fc0001;
+    display: block;
+    float: left;
+    color: white;
+}
+
+.zm{
+    width: 1.8vw;
+    height: 1.8vh;
+    text-align: center;
+    line-height: 1.8vh;
+    border-radius: 4px;
+    background-color: #00bd78;
+    display: block;
+    float: left;
+    color: white;
+}
+
+.over h5{
+    line-height: 2.1vh;
+}
+
+.over li{
+    padding: 0.8vh 0;
+}
+
+.listBox li h4:nth-child(2){
+    width: 5vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: right;
+}
+
+.listBox li h4:nth-child(3){
+    margin-right: 10px;
+}
+
+.listBox h4{
+    font-size: 0.75vw;
+    font-weight: normal;
+    width: 16vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 2vh;
+}
+
+.listBox h5{
+    font-size: 0.5vw;
+    font-weight: normal;
+    color: #89f1ff;
+    margin-top: 0.5vh;
+}
+
+.listBox h5 span{
+    margin-right: 1vw;
+}
+
+.listBox li{
+    padding: 0.6vh 0;
+    border-bottom: 1px solid rgba(137,241,255,0.4);
+}
+
+.listBox .date{
+    color: rgba(255,255,255,0.5);
+    font-size: 0.6vw;
+    float: right;
+}

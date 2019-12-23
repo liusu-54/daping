@@ -359,13 +359,19 @@
                     </div>
                 </div>
             </div>
-
-            <div class="acBox-botm">
-                <h4 class="title-h4"><span class="titleSty"></span>热点词频</h4>
+        </div>
+        
+        <div class="acBox-botm">
+            <h4 class="title-h4"><span class="titleSty"></span>热点词频</h4>
+            <div class="ec-g">
                 <div class="echarts-ac" id="echarts-ac">
+                    
 
                 </div>
+                <div class="gl"></div>
+                <div class="gr"></div>
             </div>
+            
         </div>
         <div class="clueBox">
             <h2 class="title-h2">线索搜集<i></i></h2>
@@ -640,6 +646,53 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ShortVideo">
+            <h2 class="title-h2">短视频智能生产<i></i></h2>
+            <div class="short-box">
+                <div class="short-l ss">
+                    <img src="./assets/img/dh1.gif" alt="">
+                    <div class="shortText">智能采集</div>
+                    <div class="short-lbox ">
+                        <div class="short-lbox-item short-item1">
+                            <p>5G视频直播/录播</p>
+                            <div class="sitem1-bg s1"></div>
+                        </div>
+                        <div class="short-lbox-item short-item2">
+                            <p>5G+VR直播/录播</p>
+                            <div class="sitem1-bg s2"></div>
+                        </div>
+                    </div>
+                    <div class="short-lbox">
+                        <div class="short-lbox-item short-item3">
+                            <p>手机直播/录播</p>
+                            <div class="sitem1-bg s3"></div>
+                        </div>
+                        <div class="short-lbox-item short-item4">
+                            <p>内容推送</p>
+                            <div class="sitem1-bg s4"></div>
+                        </div>
+                    </div>
+                    <div class="short-lbox">
+                        <div class="short-lbox-item short-item5">
+                            <p>电视信号截取</p>
+                            <div class="sitem1-bg s5"></div>
+                        </div>
+                        <div class="short-lbox-item short-itemz">
+                            <p>内容推送</p>
+                            <div class="sitem1-bg s6"></div>
+                        </div>
+                        <div class="short-lbox-item short-item6">
+                            <p>热点追踪</p>
+                            <div class="sitem1-bg s7"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="short-r">
+
                 </div>
             </div>
         </div>
@@ -1403,6 +1456,61 @@
 <!-- 大屏JS -->
 <script src="assets/admin-tools/js/BigScreen.js"></script>
 <script>
+
+    $(document).ready(function(){
+        setTimeout(function () {
+            $('.s1').css("animation","ss 1s")
+        },0);
+        setTimeout(function () {
+            $('.s3').css("animation","ss 1s")
+        },800);
+        setTimeout(function () {
+            $('.s5').css("animation","ss 1s")
+        },1600);
+        setTimeout(function () {
+            $('.s6').css("animation","ss 1s")
+        },2400);
+        setTimeout(function () {
+            $('.s7').css("animation","ss 1s")
+        },3200);
+        setTimeout(function () {
+            $('.s4').css("animation","ss 1s")
+        },4000);
+        setTimeout(function () {
+            $('.s2').css("animation","ss 1s")
+        },4800);
+        $('.sitem1-bg').css("animation","none")
+    })
+
+
+    function showalert(){
+        setTimeout(function () {
+            $('.s1').css("animation","ss 1s")
+        },0);
+        setTimeout(function () {
+            $('.s3').css("animation","ss 1s")
+        },800);
+        setTimeout(function () {
+            $('.s5').css("animation","ss 1s")
+        },1600);
+        setTimeout(function () {
+            $('.s6').css("animation","ss 1s")
+        },2400);
+        setTimeout(function () {
+            $('.s7').css("animation","ss 1s")
+        },3200);
+        setTimeout(function () {
+            $('.s4').css("animation","ss 1s")
+        },4000);
+        setTimeout(function () {
+            $('.s2').css("animation","ss 1s")
+        },4800);
+        $('.sitem1-bg').css("animation","none")
+    }
+    window.setInterval(showalert, 5600);
+
+
+   
     $(".acBox-tab .acBox-tabli").click(
         function () {
             var a=$(this).index();

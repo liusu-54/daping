@@ -480,12 +480,12 @@ html{
     width: 42vw;
     left: 29vw;
     height: 17vh;
-    bottom: 1.5vh;
+    bottom: 0vh;
     /* border: 1px solid #fff; */
 }
 .vBox{
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     padding-left: 0.5vw;
 }
 .vBox-item{
@@ -493,7 +493,7 @@ html{
     width: 7vw;
     height: 10vh;
     margin-right: 1vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 .news{

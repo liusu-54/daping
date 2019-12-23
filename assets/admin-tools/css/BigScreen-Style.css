@@ -1186,3 +1186,13 @@ html{
         transform:rotateY(0deg);
     }
 }
+
+.znBox{
+    position: absolute;
+    right: 29.7vw;
+    top: 60.12vh;
+    width: 22.49vw;
+    height: 24.57vh;
+    background-image: url(../../img/zn.jpg);
+    background-size: cover;
+}

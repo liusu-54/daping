@@ -681,7 +681,10 @@
 
         <div class="news">
             <div class="news-top">
-                <img src="./assets/img/bz.png" alt="" class="news-img">
+                <div class="newsBox">
+                    <img src="./assets/img/bz.png" alt="" class="news-img">
+                </div>
+
                 <div class="matrix">
                     <div class="matrix-l">
                         <ul>
@@ -1596,6 +1599,7 @@
 <script src="assets/admin-tools/js/echarts.min.js"></script>
 <script>
 var myChartac = echarts.init(document.getElementById('echarts-ac'));
+var myColor=['#14DEEB','#FFA200'];
 optionac = {
     "grid": {
         "top": "20%",
@@ -1648,6 +1652,16 @@ optionac = {
             symbolOffset: [0, -5],
             symbolPosition: 'end',
             z: 12,
+            itemStyle: {
+                normal: {
+                    show: true,
+                    //  循环颜色
+                    color: function(params) {
+                        var num = myColor.length;
+                        return myColor[params.dataIndex % num]
+                    },
+                }
+            },
             //"barWidth": "20",
             "label": {
                 "normal": {
@@ -1657,38 +1671,9 @@ optionac = {
                 }
             },
             "data": [
-                {
-                "value": 100,
-                    "itemStyle": {
-                    "color": "#59cb42"
-                    }
-                }, 
-                {
-                    "value": 55,
-                    "itemStyle": {
-                        "color": "#3cefff"
-                    }
-                },
+                {"value": 100,},
+                {"value": 55,},
             ]
-        },
-        {
-            name: '',
-            type: 'pictorialBar',
-            symbolSize: [10, 5],
-            symbolOffset: [0, 5],
-            // "barWidth": "20",
-            z: 12,
-            "data": [{
-                "value": 100,
-                "itemStyle": {
-                    "color": "#59cb42"
-                }
-            }, {
-                "value": 55,
-                "itemStyle": {
-                    "color": "#3cefff"
-                }
-            }]
         },
         {
             name: '',
@@ -1701,7 +1686,7 @@ optionac = {
                     color: 'transparent',
                     borderColor: '#14b1eb',
                     borderType: 'dashed',
-                    borderWidth: 5
+                    borderWidth: 5,
                 }
             },
             data: [100, 55]
@@ -1711,37 +1696,21 @@ optionac = {
             itemStyle: {
                 normal: {
                     //color: '#14b1eb',
-                    opacity: .7
+                    opacity: .7,
+                    color: function(params) {
+                        var num = myColor.length;
+                        return myColor[params.dataIndex % num]
+                    },
                 }
             },
             //silent: true,
             "barWidth": "10",
             //barGap: '-100%', // Make series be overlap
-            "data": [{
-                "value": 100,
-                "itemStyle": {
-                    "color": "#59cb42"
-                }
-            }, {
-                "value": 55,
-                "itemStyle": {
-                    "color": "#3cefff"
-                }
-            }],
-            markLine:{
-		            	symbol:'none',
-		            	label:{
-		            		position:"middle",
-		            		formatter:'{b}'
-		            	},
-		            	data:[{
-		            		name:"目标值",
-		            		yAxis: 80,//res.targetTwo,
-		            		lineStyle:{
-			            		color:"#eecb5f"
-			            	},
-		            	}]
-		            }
+            "data": [
+                {"value": 100,},
+                {"value": 55,}
+                ],
+
 
         }
 

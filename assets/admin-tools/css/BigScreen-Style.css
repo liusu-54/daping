@@ -637,46 +637,6 @@ html{
     border-radius: 4px;
     background-color: #0baec8;
     display: block;
-<<<<<<< HEAD
-}
-.db .list-text::before {   
-    content: " ";   
-    display: block;
-    width: 0.5vw;
-    height: 0.5vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #FF003C;
-  }   
-  
-
-.item-video{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    position: relative;
-}
-.item-video:hover{
-    cursor: pointer;
-}
-.videobox{
-    width: 100%;
-    padding: 2vh 4vw;
-    box-sizing: border-box;
-}
-.m-video{
-    width: 100%;
-    height: 100%;
-}
-
-
-.m-video img{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-=======
     float: left;
     color: white;
 }
@@ -756,4 +716,41 @@ html{
     font-size: 0.6vw;
     float: right;
 }
->>>>>>> master
+
+.db .list-text::before {   
+    content: " ";   
+    display: block;
+    width: 0.5vw;
+    height: 0.5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FF003C;
+  }   
+  
+
+.item-video{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.item-video:hover{
+    cursor: pointer;
+}
+.videobox{
+    width: 100%;
+    padding: 2vh 4vw;
+    box-sizing: border-box;
+}
+.m-video{
+    width: 100%;
+    height: 100%;
+}
+
+
+.m-video img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

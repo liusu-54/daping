@@ -769,48 +769,27 @@
                                 <ul id="stack_yuda" class="stack stack--yuda">
                                     <li class="stack__item">
                                         <ul>
-                                            <div>
-                                                <h2>中国移动</h2>
-                                                <h3>156****4432</h3>
-                                                <div class="mesBox clearfix2">山东</div>
-                                                <div class="mesBox ml2">济南</div>
-                                                <div class="clearfix2"></div>
-                                            </div>
+                                            <li class="stackHead">
+                                                文章详情
+                                            </li>
                                             <li>
-                                                <div>积分</div>
-                                                <div class="numSty">26,879</div>
+                                                <h1>前11个月山东CPI同比累计上涨很多</h1>
+                                            </li>
+                                            <li>
+                                                <h2>转载文章<span>236</span>篇</h2>
+                                            </li>
+                                            <li>
+                                                <h2>转载媒体<span>236</span>家</h2>
+                                            </li>
+                                            <li>
+                                                <div>大众日报客户端-关注-微观山东</div>
+                                                <div>O2019-12-19 14:21:03</div>
                                                 <div class="clearfix"></div>
                                             </li>
                                             <li>
-                                                <div>微信昵称</div>
-                                                <div>娇娇悄悄</div>
-                                                <div class="clearfix"></div>
+                                                <p>前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%前11个月山东CPI同比累计上涨3.0%</p>
                                             </li>
-                                            <li>
-                                                <div>我的应用</div>
-                                                <div>山东24小时<br>手机报<br>大众论坛</div>
-                                                <div class="clearfix"></div>
-                                            </li>
-                                            <li>
-                                                <div>设备型号</div>
-                                                <div>OPPO R11s</div>
-                                                <div class="clearfix"></div>
-                                            </li>
-                                            <li>
-                                                <div>兴趣</div>
-                                                <div>时政 体育 娱乐</div>
-                                                <div class="clearfix"></div>
-                                            </li>
-                                            <li>
-                                                <div>注册IP</div>
-                                                <div>202.102.188.174</div>
-                                                <div class="clearfix"></div>
-                                            </li>
-                                            <li>
-                                                <div>注册时间</div>
-                                                <div>2018-12-17</div>
-                                                <div class="clearfix"></div>
-                                            </li>
+
                                         </ul>
                                     </li>
                                     <li class="stack__item">
@@ -1285,35 +1264,7 @@
 
     (function() {
 
-        var support = { animations : Modernizr.cssanimations },
-            animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
-            animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
-            onEndAnimation = function( el, callback ) {
-                var onEndCallbackFn = function( ev ) {
-                    if( support.animations ) {
-                        if(ev.target != this) return;
-                        this.removeEventListener( animEndEventName, onEndCallbackFn);
-                    }
-                    if(callback && typeof callback === 'function') {callback.call();}
-                };
-                if( support.animations ) {
-                    el.addEventListener(animEndEventName, onEndCallbackFn);
-                }
-                else {
-                    onEndCallbackFn();
-                }
-            };
-
-        function nextSibling(el) {
-            var nextSibling = el.nextSibling;
-            while(nextSibling && nextSibling.nodeType != 1) {
-                nextSibling = nextSibling.nextSibling
-            }
-            return nextSibling;
-        }
-
         var yuda = new Stack(document.getElementById('stack_yuda'))
-
 
         // controls the click ring effect on the button
         var buttonClickCallback = function(bttn) {
@@ -1325,30 +1276,9 @@
         document.querySelector('.button--reject[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.reject(buttonClickCallback.bind(this)); });
 
 
-        [].slice.call(document.querySelectorAll('.button--sonar')).forEach(function(bttn) {
-            bttn.addEventListener(clickeventtype, function() {
-                bttn.setAttribute('data-state', 'locked');
-            });
-        });
 
-        [].slice.call(document.querySelectorAll('.button--material')).forEach(function(bttn) {
-            var radialAction = nextSibling(bttn.parentNode);
 
-            bttn.addEventListener(clickeventtype, function(ev) {
-                var boxOffset = radialAction.parentNode.getBoundingClientRect(),
-                    offset = bttn.getBoundingClientRect();
 
-                radialAction.style.left = Number(offset.left - boxOffset.left) + 'px';
-                radialAction.style.top = Number(offset.top - boxOffset.top) + 'px';
-
-                classie.add(radialAction, classie.has(bttn, 'button--reject') ? 'material-circle--reject' : 'material-circle--accept');
-                classie.add(radialAction, 'material-circle--active');
-                onEndAnimation(radialAction, function() {
-                    classie.remove(radialAction, classie.has(bttn, 'button--reject') ? 'material-circle--reject' : 'material-circle--accept');
-                    classie.remove(radialAction, 'material-circle--active');
-                });
-            });
-        });
     })();
 
 </script>

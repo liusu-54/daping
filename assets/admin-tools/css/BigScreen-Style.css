@@ -790,9 +790,33 @@ html{
 .stack__item li div:nth-child(1){
     font-size: 0.55vw;
     color: #00e5ff;
-    width: 40%;
-    float: left;
     padding-left: 0.6vw;
+}
+
+.stack__item li h2{
+    font-size: 0.55vw;
+    color: #fff;
+    padding-left: 0.6vw;
+    font-weight: normal;
+}
+
+.stack__item li h2 span{
+    font-size: 1vw;
+    font-weight: normal;
+    font-family: Digital-7 Mono;
+    color: #FEA017;
+    padding: 0 0.15vw;
+}
+
+.stack__item li h1{
+    font-size: 0.70vw;
+    color: #fff;
+    padding-left: 0.6vw;
+    font-weight: normal;
+    width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .stack__item li div:nth-child(2){
@@ -803,7 +827,7 @@ html{
 }
 
 .stack__item li{
-    padding: 0.5vh 0;
+    padding: 0.3vh 0;
 }
 
 .numSty{
@@ -863,11 +887,6 @@ html{
     background-color: rgb(8, 71, 62);
 }
 
-.stack__item h2{
-    float: left;
-    margin-left: 0.5vw;
-}
-
 .stack__item h3{
     float: left;
     margin-left: 0.5vw;
@@ -881,16 +900,29 @@ html{
 }
 
 .stack--yuda{
-    transform: perspective(500px) rotateY(15deg);
+    transform: perspective(500px) rotateY(-10deg);
 
 }
 .stack__item{
-    width: 10vw;
-    height: 13.1vw;
+    width: 11.2vw;
+    height: 12vw;
     border: 1px solid #26fbe9;
-    background-color: rgba(5, 15, 40, 0.89);
+    background-color: rgba(19, 21, 62, 0.89);
     text-align: left;
+    margin-top: 1.1vw;
+    border-radius: unset;
 }
 .stack{
     z-index: 300;
+    height: 250px;
+}
+
+.stack__item .stackHead{
+    background-image: linear-gradient(-90deg, rgba(40,252,232,0), rgba(40,252,232,1));
+    color: rgba(19, 21, 62, 1);
+    padding-left: 0.2vw;
+    height: 1.2vw;
+    line-height: 0.8vw;
+    font-size: 0.8vw;
+    font-weight: bold;
 }

@@ -614,7 +614,8 @@ html{
 .yqBox .yqNav div{
     float: left;
     color: #fff;
-    font-size: 0.75vw;
+    font-size: 0.8vw;
+    cursor: pointer;
 }
 
 .yqBox .yqNav span{
@@ -940,4 +941,72 @@ html{
     width: 1.5vw;
     height: 1.5vw;
     padding: 0;
+}
+
+.yqNav i{
+    display: inline-block;
+    width: 2vh;
+    height: 1.6vh;
+    /* border: 1px solid #fff; */
+    margin-left: 0.6vw;
+    margin-bottom: 0.4vh;
+    vertical-align: middle;
+    background: url(../../img/title-ic.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.yqTabBox{
+    background-image: url(../../img/qkBg.png);
+    background-size: cover;
+    width: 26.7vw;
+    height: 14.5vw;
+    margin-top: -1vw;
+    position: relative;
+}
+
+.yqTabBox .qkBg .qkBlock1{
+    background-image: url(../../img/qk1.png);
+    background-size: cover;
+    width: 6.2vw;
+    height: 7.5vw;
+    position: absolute;
+    left: 1.3vw;
+    top: 2.6vw;
+}
+
+.yqTabBox .qkBg .qkBlock2{
+    background-image: url(../../img/qk1.png);
+    background-size: cover;
+    width: 6.2vw;
+    height: 7.5vw;
+    position: absolute;
+    left: 10.3vw;
+    top: 2.6vw;
+}
+
+.yqTabBox .qkBg .qkBlock3{
+    background-image: url(../../img/qk1.png);
+    background-size: cover;
+    width: 6.2vw;
+    height: 7.5vw;
+    position: absolute;
+    left: 19.3vw;
+    top: 2.6vw;
+}
+
+.yqTabBox .qkBg .qkBlock .qkText{
+    width: 6.2vw;
+    text-align: center;
+}
+
+.yqTabBox .qkBg .qkBlock .qkText h1{
+    font-size: 0.7vw;
+    color: #f98307;
+    font-weight: normal;
+}
+
+.yqTabBox .qkBg .qkBlock .qkText h2{
+    font-size: 0.6vw;
+    color: #cbcbcb;
+    font-weight: normal;
 }

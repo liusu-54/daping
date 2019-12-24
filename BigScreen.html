@@ -1460,6 +1460,18 @@
 
     </div>
 
+
+    <div class="mask"></div>
+    <div class="modal-qkl">
+        <div class="qkl-modaltitle">文字稿件</div>
+        <div class="qkl-modalbox">
+
+        </div>
+    </div>
+    <div class="modal-map">
+        <div class="hidemisk"></div>
+        <iframe src="https://dp.hzfanews.com/prd/dazhongrb/sidenews.aspx?id=2031" frameborder="0" class="modal-mapif"></iframe>
+    </div>
   </body>
 
 <!-- BEGIN: PAGE SCRIPTS -->
@@ -1471,6 +1483,27 @@
 
 <!-- 大屏JS -->
 <script src="assets/admin-tools/js/BigScreen.js"></script>
+<script>
+
+$('.qkBlock').click(()=>{
+
+    $('.mask').css("display","block")
+    $('.modal-qkl').fadeIn()
+})
+$('.mask').click(()=>{
+
+    $('.mask').css("display","none")
+    $('.modal-qkl').fadeOut()
+    $('.modal-map').fadeOut()
+})
+
+$('.mapBtn2,.mapBtn1').click(()=>{
+    $('.mask').css("display","block")
+    $('.modal-map').fadeIn()
+})
+
+
+</script>
 <script>
 
     $(document).ready(function(){

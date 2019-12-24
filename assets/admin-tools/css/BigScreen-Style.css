@@ -1196,3 +1196,28 @@ html{
     background-image: url(../../img/zn.jpg);
     background-size: cover;
 }
+.mpText{
+    position: relative;
+}
+.mpText i{
+    display: inline-block;
+    width: 0.8vw;
+    height: 0.8vw;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 0.2vw;
+    transform: translateY(-50%);
+}
+.mpBor1 .mpText i{
+    background: url("../../img/mb1.png");
+    background-size: 100% 100%;
+}
+.mpBor2 .mpText i{
+    background: url("../../img/mb2.png");
+    background-size: 100% 100%;
+}
+.mpBor3 .mpText i{
+    background: url("../../img/mb3.png");
+    background-size: 100% 100%;
+}

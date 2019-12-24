@@ -43,7 +43,7 @@ html{
 .bgBox{
     position: absolute;
     left: 15vw;
-    top: 81vh;
+    top: 81.7vh;
     width: 12.99vw;
     height: 16.07vh;
 
@@ -219,6 +219,10 @@ html{
     z-index: 100;
 }
 
+.mapBtn1 p:hover, .mapBtn2 p:hover{
+    color: #ffa200;
+}
+
 .mpBor1{
     background-image: url(../../img/mpBor.png);
     background-size: cover;
@@ -301,6 +305,8 @@ html{
     font-size: 1vw;
     font-weight: 500;
     color: rgb(3, 228, 255);
+    padding-left: 0.2vw;
+    padding-top: 0.1vw;
     /* border: 1px solid #fff; */
 }
 .title-h2 i{
@@ -332,7 +338,7 @@ html{
 .acBox-top-lt{
     width: 100%;
     height: 5vh;
-    background-color: #5c2e1c;
+    /*background-color: #5c2e1c;*/
 }
 .ac-img{
     width: 2vw;
@@ -363,7 +369,7 @@ html{
     box-sizing: border-box;
 }
 .rdc{
-    background-color: #2f2407;
+    /*background-color: #2f2407;*/
 }
 .title-h4{
     width: 100%;
@@ -433,7 +439,6 @@ html{
 .echarts-ac{
     width: 100%;
     height: 12.5vh;
-    border: 1px solid #fff;
 }
 
 .clueBox{
@@ -449,6 +454,7 @@ html{
     width: 12.5vw;
     height: 48vh;
     float: left;
+    padding: 0 0.2vw;
     /* border: 1px solid #fff; */
 }
 .clue-r{
@@ -545,11 +551,13 @@ html{
     border-bottom: 1px dashed #55567b;
 }
 .news-s-img{
-    width: 3vw;
-    height: 4vh;
+    width: 2.3vw;
+    height: 3.1vh;
     border: 1px solid #fff;
     display: inline-block;
     float: left;
+    margin-top: 0.2vw;
+    margin-right: 0.2vw;
 }
 .news-s-r{
     width: 10vw;
@@ -557,11 +565,14 @@ html{
     float: left;
 }
 .news-s-r p{
-    font-size: 0.8vw;
     width: 100%;
     height: 2vh;
     line-height: 2vh;
     padding-left: 0.2vw;
+    font-size: 0.7vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .news-s-rb{
     font-size: 0.6vw;
@@ -606,11 +617,11 @@ html{
     border-radius: 50%;
 }
 .wbwxBox{
-    width: 14vw;
+    width: 14.2vw;
     /* border: 1px solid #fff; */
     position: absolute;
     top: 0.3vh;
-    right: 1.8vw;
+    right: 1.6vw;
 }
 
 .yqBox{
@@ -1040,12 +1051,18 @@ html{
     font-size: 0.7vw;
     color: #f98307;
     font-weight: normal;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 
 .yqTabBox .qkBg .qkBlock .qkText h2{
     font-size: 0.6vw;
     color: #cbcbcb;
     font-weight: normal;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 
 .yqTabBox .qkBg .qkBor{
@@ -1066,6 +1083,9 @@ html{
 
 .yqTabBox .qkBg .qkBor li{
     font-size: 0.6vw;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 
 .yqTabBox .qkBg .qkBor li span{

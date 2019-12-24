@@ -1195,6 +1195,18 @@ html{
     }
 }
 
+@keyframes fw3go{
+    0%{
+        transform:translateY(5px);
+    }
+    50%{
+        transform:translateY(-5px);
+    }
+    100%{
+        transform:translateY(5px);
+    }
+}
+
 @keyframes zhuany{
     0%{
         transform:rotateY(0deg);
@@ -1209,13 +1221,107 @@ html{
 
 .znBox{
     position: absolute;
-    right: 29.7vw;
-    top: 60.12vh;
-    width: 22.49vw;
+    right: 31.1vw;
+    top: 58.92vh;
+    width: 21.29vw;
     height: 24.57vh;
-    background-image: url(../../img/zn.jpg);
+    background-image: url(../../img/znsc.png);
     background-size: cover;
 }
+.znY{
+    position: absolute;
+    right: 16.8vw;
+    top: 10vh;
+    width: 3.9vw;
+    height: 7vh;
+    background-image: url(../../img/circle.png);
+    background-size: cover;
+    opacity: 1;
+
+    animation: zhuan 16s linear infinite;
+}
+
+.znY2{
+    right: 16.8vw;
+    top: 16.7vh;
+}
+
+.znY3{
+    right: -1.2vw;
+    top: 16vh;
+}
+
+.znY4{
+    right: -1.1vw;
+    top: 9.8vh;
+}
+
+.znX{
+    position: absolute;
+    right: 17.9vw;
+    top: 5.4vh;
+    width: 1.4vw;
+    height: 3.6vh;
+    background-image: url(../../img/zn01.png);
+    background-size: cover;
+    opacity: 1;
+    /*animation: zhuan 16s linear infinite;*/
+}
+
+.znX1{
+    animation: fw3go 8s linear infinite;
+}
+
+.znX2{
+    right: 16.1vw;
+    top: 4.4vh;
+    background-image: url(../../img/zn02.png);
+    animation: fw3go 8s linear 0.5s infinite;
+    transform:translateY(5px);
+}
+
+.znX3{
+    right: 14.1vw;
+    top: 2.3vh;
+    animation: fw3go 8s linear 1s infinite;
+    transform:translateY(5px);
+}
+
+.znX4{
+    width: 1.8vw;
+    right: 6.3vw;
+    top: 1.8vh;
+    background-image: url(../../img/zn04.png);
+    animation: fw3go 8s linear 1.5s infinite;
+    transform:translateY(5px);
+}
+
+.znX5{
+    width: 1.6vw;
+    right: 4.1vw;
+    top: 2.4vh;
+    background-image: url(../../img/zn05.png);
+    animation: fw3go 8s linear 2s infinite;
+    transform:translateY(5px);
+}
+
+.znX6{
+    right: 2.2vw;
+    top: 4.7vh;
+    background-image: url(../../img/zn06.png);
+    animation: fw3go 8s linear 2.5s infinite;
+    transform:translateY(5px);
+}
+
+.znX7{
+    width: 1.7vw;
+    right: 0.1vw;
+    top: 5.3vh;
+    background-image: url(../../img/zn07.png);
+    animation: fw3go 8s linear 3s infinite;
+    transform:translateY(5px);
+}
+
 .mpText{
     position: relative;
 }
@@ -1240,4 +1346,42 @@ html{
 .mpBor3 .mpText i{
     background: url("../../img/mb3.png");
     background-size: 100% 100%;
+}
+
+.pan3Box{
+    transform: rotateX(80deg);
+    position: absolute;
+    left: 2.6vw;
+    top: -6.7vh;
+    z-index: 10;
+    width: 26.375vw;
+}
+
+.pan3{
+    background-image: url(../../img/circle1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17.375vw;
+    height: 58.3vh;
+    animation: zhuan 8s linear infinite;
+}
+
+.pan2Box{
+    transform: rotateX(80deg);
+    position: absolute;
+    left: 2.8vw;
+    top: -8.3vh;
+    z-index: 10;
+    width: 26.375vw;
+}
+
+.pan2{
+    background-image: url(../../img/circle2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17.375vw;
+    height: 58.3vh;
+    animation: zhuan 8s linear infinite;
 }

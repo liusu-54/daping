@@ -873,9 +873,10 @@ html{
 
 .controls{
     position: absolute;
-    left: 5.9vw;
+    left: 9.8vw;
     bottom: 6.6vw;
     z-index: 301;
+    width: unset;
 }
 
 .tSearch{
@@ -1176,7 +1177,7 @@ html{
         transform:scale(0.7);
     }
     50%{
-        transform:scale(0.9);
+        transform:scale(0.8);
     }
     100%{
         transform:scale(0.7);
@@ -1384,4 +1385,18 @@ html{
     width: 17.375vw;
     height: 58.3vh;
     animation: zhuan 8s linear infinite;
+}
+
+.znNum{
+    position: absolute;
+    left: 6.5vw;
+    top: 7.8vw;
+    width: 10vw;
+    color: #f98307;
+}
+
+.znNum .mpNum{
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: Digital-7 Mono;
 }

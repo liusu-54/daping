@@ -1061,7 +1061,7 @@
                         <div class="swiper-slide">
                             <div class="yqTabBox">
                                 <div class="qkBg">
-                                        <div class="qkBlock qkBlock1">
+                                        <div class="qkBlock qkBlock1" id="qkid1">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1075,7 +1075,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock2">
+                                        <div class="qkBlock qkBlock2" id="qkid2">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1089,7 +1089,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock3">
+                                        <div class="qkBlock qkBlock3" id="qkid3">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1110,7 +1110,7 @@
                             <div class="yqTabBox">
                                 <div class="qkBg1">
                                     <div class="qkBg">
-                                        <div class="qkBlock qkBlock1">
+                                        <div class="qkBlock qkBlock1" id="qkid4">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1124,7 +1124,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock2">
+                                        <div class="qkBlock qkBlock2" id="qkid5">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1138,7 +1138,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock3">
+                                        <div class="qkBlock qkBlock3" id="qkid6">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1160,7 +1160,7 @@
                             <div class="yqTabBox">
                                 <div class="qkBg1">
                                     <div class="qkBg">
-                                        <div class="qkBlock qkBlock1">
+                                        <div class="qkBlock qkBlock1" id="qkid7">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1174,7 +1174,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock2">
+                                        <div class="qkBlock qkBlock2" id="qkid8">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1188,7 +1188,7 @@
                                                 <li><span>*</span>块高:3814524</li>
                                             </ul>
                                         </div>
-                                        <div class="qkBlock qkBlock3">
+                                        <div class="qkBlock qkBlock3" id="qkid9">
                                             <div class="qkText">
                                                 <h1>文字稿件test</h1>
                                                 <h2>资源ID:1234567894</h2>
@@ -1469,7 +1469,7 @@
         <div class="qkl-modaltitle">文字稿件</div>
         <div class="qkl-modalbox">
             <div class="qkl-modalbox">
-                <embed src="assets/img/1.pdf" />
+                <embed class="qkl-pdf" src="" />
             </div>
         </div>
     </div>
@@ -1490,9 +1490,15 @@
 <script src="assets/admin-tools/js/BigScreen.js"></script>
 <script>
 
-$('.qkBlock').click(()=>{
-
+$('.qkBlock').click((e)=>{
+    $('.qkl-pdf').attr("src","")
     $('.mask').css("display","block")
+
+    var qkid = $(e.target).attr('id');
+    alert(qkid)
+    
+    $('.qkl-pdf').attr("src","assets/img/1.pdf")
+   
     $('.modal-qkl').fadeIn()
 })
 $('.mask').click(()=>{

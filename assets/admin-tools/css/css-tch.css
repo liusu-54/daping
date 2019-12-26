@@ -28,13 +28,15 @@
   .h50{height: 50% !important;}
   .h60{height: 60% !important;}
   .h70{height: 70% !important;}
-  .h70{height: 70% !important;}
+  .h80{height: 80% !important;}
   .h30{height: 30% !important;}
   .h100{height: 100% !important;}
   .w40{width: 40% !important;}
   .w50{width: 50% !important;}
   .w60{width: 60% !important;}
   .w70{width: 70% !important;}
+  .w80{width: 80% !important;}
+  .w90{width: 90% !important;}
   .w100{width: 100% !important;}
   .hauto{height: auto !important;}
 
@@ -60,7 +62,7 @@
 }
 
 .tch-box{
-  top:13vh;
+  top:0;
   position: relative;
   margin: 0 auto;
   padding: 1vh 0.8vw;
@@ -68,6 +70,10 @@
   background: #020c25;
   border-top-left-radius:0.5vw;
   border-bottom-left-radius:0.5vw;
+  z-index: 500;
+}
+.cb2 .tch-box{
+  top: 6.3vw;
 }
   .tch-title{
     border-bottom: 1px solid #00eaff; 
@@ -136,6 +142,7 @@
       right: 4vw;
       top:5vh;
       cursor: pointer;
+      z-index: 501;
 
     }
     .close-tch img{
@@ -154,7 +161,7 @@
   padding-top: 2vh;
   top:0%;
   right: 0%;
-  z-index: 2000;
+  z-index: 199;
 
 }
 .titleh-first h5{

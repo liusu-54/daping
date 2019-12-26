@@ -276,7 +276,7 @@ html{
 .mpBor2 .mpNum{
     color: #FFDF00;
     font-size: 1.2vw;
-    width: 5.3vw;
+    width: 5.7vw;
     text-align: center;
     font-family: Digital-7 Mono;
 }
@@ -284,7 +284,7 @@ html{
 .mpBor3 .mpNum{
     color: #19FE02;
     font-size: 1.2vw;
-    width: 5.3vw;
+    width: 5.7vw;
     text-align: center;
     font-family: Digital-7 Mono;
 }
@@ -1399,4 +1399,86 @@ html{
     font-size: 1.2vw;
     text-align: center;
     font-family: Digital-7 Mono;
+}
+
+.news-botm-box .news-container2{
+    height: 4.9vw !important;
+}
+
+.zjText{
+    width: 60%;
+    float: right;
+}
+
+.zjText ul{
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+}
+
+.zjText ul li{
+    margin-bottom: 0.4vw;
+    margin-left: 1vw;
+    font-size: 0.6vw;
+    color: #fff;
+}
+
+.zjText ul li:nth-child(1){
+    font-size: 0.9vw;
+}
+
+.repBox{
+    background: #021542;
+    margin-bottom: 0.3vw;
+    cursor: pointer;
+}
+
+.showRep{
+    float: right;
+    border: 1px solid #00eaff;
+    font-size: 0.6vw;
+    padding: 0.3vw;
+    border-radius: 20px;
+    margin-top: -3.9vh;
+    cursor: pointer;
+    z-index: 300;
+    position: relative;
+}
+
+.repBor{
+    border: 1px #00eaff solid;
+    box-shadow:inset 0 0 80px rgba(55, 184, 216, 0.25);
+}
+
+.repList{
+    width: 26%;
+    float: right;
+    height: 88%;
+    overflow-y: auto;
+}
+
+.imgBox{
+    width: 38%;
+    float: left;
+    padding-left: 1vw;
+}
+.imgBox img{
+    width: 80%;
+    height: 6.6vw;
+    padding: 0.3vw 0;
+}
+
+.jzdtMap{
+    width: 70%;
+    height: 40vw;
+    float: left;
+}
+
+.jzdt .tch-box{
+    width: 100%;
+    height: 100%;
+}
+
+.jzdt .close-tch{
+    right: 0vw;
+    top: -5vh;
 }

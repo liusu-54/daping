@@ -357,14 +357,24 @@ html{
     top: 2.6vh;
     left: 4.3vw;
 }
-
 .acBox-top-lt img{
     margin-left: 5px;
     height: 4.5vh;
     margin-top: 0.3vh;
     margin-bottom: 0;
 }
-
+.ac-img{
+    width: 3vw;
+}
+.acBox-top-lt{
+    height: 11vh;
+    padding-top: 3vh;
+}
+.imgbox-r h2{
+    font-size: 0.9vw;
+    height: 4vh;
+    line-height: 4vh;
+}
 .intellectBox .title-h4{
     padding-left: 0.3vw;
     padding-top: 1vw;

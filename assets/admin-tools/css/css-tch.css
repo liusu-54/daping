@@ -72,6 +72,140 @@
   border-bottom-left-radius:0.5vw;
   z-index: 500;
 }
+.rmtfx{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+		border-top-left-radius:0.5vw;
+  	border-bottom-left-radius:0.5vw;
+    z-index: 1000;
+    padding: 20vh 20vw;
+}
+
+.rmtfx .cbBox{
+	width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+	padding:20px;
+}
+
+.rmtfx h2{	
+	font-size: 2.4rem;
+	line-height: .8rem;
+	font-family: SimHei;
+	font-weight: 400;
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+	height: 5vh;
+  line-height: 5vh;
+}
+.rmtfx .zyBox{
+  width: 7%;
+  float: left;
+	border-radius: 10px;
+	margin-top: 6vh;
+}
+
+
+.zycfBox {
+	width: 7%;
+  overflow: hidden;
+	float:left;
+}
+
+.zyRight {
+    width: 93%;
+		float: right;
+	  margin-top: 7vh;
+}
+.diss{
+	display: none;
+}
+
+.zyLeft .activeZy {
+    color: 
+    white;
+    font-weight: bold;
+}
+.zyBox div {
+    margin-top: 3vh;
+    font-size: 0.8vw;
+    margin-bottom: 2.5vh;
+    cursor: pointer;
+    padding-left: 0.5vw;
+    color: rgb(40, 255, 234);
+	  height: 4vh;
+}
+
+.dianshi {
+    width: 90%;
+    height: 100%;
+    margin-top: 5vh;
+    background: url(../images/222.png) left top no-repeat;
+    background-size: contain;
+}
+.dianshi .ds-gb {
+    float: left;
+    width: 43%;
+    height: 100%;
+}
+.bsFrame h2 {
+    font-family: "PingFang SC";
+    font-size: 0.9vw;
+    font-weight: normal;
+    color: 
+    #00ffff;
+}
+.ds-title {
+    font-size: 0.5vw;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+ul.ds li img {
+    position: absolute;
+    margin-top: 0.7vh;    
+    width: 1.8vw;
+}
+
+.rmtfx h2.ds-title{
+	font-size:1.6vw;
+}
+ul.ds li p {
+    color: #fff;
+    font-size: 1vw;
+    margin: 0vw 0vh;
+    padding: 0.8vh 0vw;
+    padding-left: 2vw;
+}
+
+
+ul.ds li p span {
+    display: block;
+    width: 4vw;
+    font-size: 1vw;
+    text-align: left;
+    float: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .cb2 .tch-box{
   top: 6.3vw;
 }
@@ -507,4 +641,8 @@
   margin: 0;
   padding-top: 1vh;
 
+}
+
+#tcWin{
+  background-color: white;
 }

@@ -298,6 +298,11 @@ html{
     top: 6.5vh;
     left: 2vw;
 }
+
+.activeBox .title-h2:hover,.znNum .mpNum:hover{
+    cursor: pointer;
+    color: white;
+}
 .title-h2{
     width: 100%;
     height: 3vh;
@@ -393,14 +398,14 @@ html{
     width: 100%;
     height: 2.5vh;
     line-height: 2.5vh;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     position: relative;
 }
 .list-t-b{
     width: 100%;
     height: 1.5vh;
     line-height: 1.5vh;
-    font-size: 0.4vw;
+    font-size: 0.55vw;
     position: relative;
 }
 .list-t-b span{
@@ -569,7 +574,7 @@ html{
     height: 2vh;
     line-height: 2vh;
     padding-left: 0.2vw;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1261,7 +1266,7 @@ html{
     position: absolute;
     right: 17.9vw;
     top: 5.4vh;
-    width: 1.4vw;
+    width: 2.3vw;
     height: 3.6vh;
     background-image: url(../../img/zn01.png);
     background-size: cover;
@@ -1270,18 +1275,21 @@ html{
 }
 
 .znX1{
+	width: 2.0vw;
     animation: fw3go 8s linear infinite;
 }
 
 .znX2{
     right: 16.1vw;
     top: 4.4vh;
+	width: 2.0vw;
     background-image: url(../../img/zn02.png);
     animation: fw3go 8s linear 0.5s infinite;
     transform:translateY(5px);
 }
 
 .znX3{
+	width: 2.0vw;
     right: 14.1vw;
     top: 2.3vh;
     animation: fw3go 8s linear 1s infinite;
@@ -1289,7 +1297,7 @@ html{
 }
 
 .znX4{
-    width: 1.8vw;
+    width: 2.0vw;
     right: 6.3vw;
     top: 1.8vh;
     background-image: url(../../img/zn04.png);
@@ -1298,7 +1306,7 @@ html{
 }
 
 .znX5{
-    width: 1.6vw;
+    width: 2.0vw;
     right: 4.1vw;
     top: 2.4vh;
     background-image: url(../../img/zn05.png);
@@ -1307,7 +1315,8 @@ html{
 }
 
 .znX6{
-    right: 2.2vw;
+	width: 2.0vw;
+    right: 2.0vw;
     top: 4.7vh;
     background-image: url(../../img/zn06.png);
     animation: fw3go 8s linear 2.5s infinite;
@@ -1315,8 +1324,8 @@ html{
 }
 
 .znX7{
-    width: 1.7vw;
-    right: 0.1vw;
+    width: 2.0vw;
+    right: -0.5vw;
     top: 5.3vh;
     background-image: url(../../img/zn07.png);
     animation: fw3go 8s linear 3s infinite;
@@ -1355,7 +1364,7 @@ html{
     left: 2.6vw;
     top: -6.7vh;
     z-index: 10;
-    width: 26.375vw;
+    width: 17.375vw;
 }
 
 .pan3{
@@ -1374,7 +1383,7 @@ html{
     left: 2.8vw;
     top: -8.3vh;
     z-index: 10;
-    width: 26.375vw;
+    width: 17.375vw;
 }
 
 .pan2{
@@ -1481,4 +1490,9 @@ html{
 .jzdt .close-tch{
     right: 0vw;
     top: -5vh;
+}
+
+.bs-bg~.jzdt{
+    display: block;
+    opacity: 0;
 }

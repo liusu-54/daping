@@ -773,7 +773,7 @@
                     </div>
                     <div class="matrix-r">
                         <ul>
-                            <li class="matrix-li">
+                            <li class="matrix-li" id="rmtjz">
                                 <div class="imgbox"> 
                                 </div>
                                 <img src="./assets/img/zzic01.png" alt="">
@@ -1489,6 +1489,14 @@
 <!-- 大屏JS -->
 <script src="assets/admin-tools/js/BigScreen.js"></script>
 <script>
+    $('.matrix-li').click((e)=>{
+        var rmtjz = $(e.target).attr('id');
+        if(rmtjz){
+            alert(55)
+        }
+        $('.mask').css("display","block")
+        $('.modal-qkl').fadeIn()
+    })
 
 $('.qkBlock').click((e)=>{
     $('.qkl-pdf').attr("src","")

@@ -111,7 +111,7 @@ html{
 .matrix-l .matrix-li{
     text-align: right;
     line-height: 5vh;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     padding-right: 0.5vw;
 }
 .matrix-l img{
@@ -158,8 +158,8 @@ html{
 .matrix-r .matrix-li{
     text-align: left;
     line-height: 5vh;
-    font-size: 0.6vw;
-    padding-left: 0.9vw;
+    font-size: 0.8vw;
+    padding-left: 0.4vw;
 }
 .matrix-r .imgbox{
     position: absolute;

@@ -457,7 +457,7 @@ html{
     text-align: center;
     font-size: 1vw;
 }
-.mask{
+.mask,.mask-img{
     display: none;
     width: 100vw;
     height: 100vh;
@@ -467,7 +467,7 @@ html{
     z-index: 999;
     background: rgba(0, 0, 0, 0.6);
 }
-.modal-map{
+.modal-map,.modal-img{
     display: none;
     position: fixed;
     top: 50%;
@@ -478,6 +478,34 @@ html{
     background-color: #ccc;
     z-index: 1000;
     box-shadow: 0 0 3vw #ccc;
+}
+.modal-img{
+    width: 60vw;
+    height: 70vh;
+    background-color: rgba(0,0,0,.6);
+}
+.m-img-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.m-img-box img{
+    display: block;
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-close{
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    top: -3vw;
+    right: -3vw;
+
 }
 .modal-mapif{
     width: 100%;

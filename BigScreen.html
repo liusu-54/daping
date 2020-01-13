@@ -683,7 +683,7 @@
                             <div class="sitem1-bg s5"></div>
                         </div>
                         <div class="short-lbox-item short-itemz">
-                            <p>内容推送</p>
+                            <p>合作支持</p>
                             <div class="sitem1-bg s6"></div>
                         </div>
                         <div class="short-lbox-item short-item6">
@@ -1491,6 +1491,17 @@
         $('.modal-qkl').fadeIn()
     })
 
+    /*报纸点击*/
+    $("#paper").on('click',function(){
+        $('.qkl-pdf').attr("src",'');
+        var src = $(this).find('img').attr("data-url");
+        $('.qkl-pdf').attr("src",src);
+        $('.mask').css("display","block");
+        $('.modal-qkl').fadeIn();
+        $('.qkl-modaltitle').html("")
+    });
+
+    /*区块链点击*/
 $('.qkBlock').click((e)=>{
     $('.qkl-pdf').attr("src","")
     $('.mask').css("display","block")

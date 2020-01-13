@@ -1461,8 +1461,8 @@
     <div class="modal-qkl">
         <div class="qkl-modaltitle">文字稿件</div>
         <div class="qkl-modalbox">
-            <div class="qkl-modalbox">
-                <embed class="qkl-pdf" src="" />
+            <div class="qkl-modalbox" id="qkl-modalbox">
+
             </div>
         </div>
     </div>
@@ -1503,13 +1503,13 @@
 
     /*区块链点击*/
 $('.qkBlock').click((e)=>{
-    $('.qkl-pdf').attr("src","")
+    
     $('.mask').css("display","block")
-
     var qkid = $(e.target).attr('id');
     alert(qkid)
-    
-    $('.qkl-pdf').attr("src","assets/img/1.pdf")
+    var str = '';
+    str = '<embed class="qkl-pdf" src="'+qkid+'" />'  //加号内放 psd 的 src 
+    $("#qkl-modalbox").html(str)
    
     $('.modal-qkl').fadeIn()
 })

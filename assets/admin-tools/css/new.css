@@ -15,7 +15,7 @@ html{
     height: 17.5vh !important;
 }
 .hei2{
-    height: 9vh !important;
+    height: 17.5vh !important;
 }
 .wbwx .list-li{
     background-image: linear-gradient(to bottom, #226891 0%, #3a3066 100%);
@@ -46,6 +46,10 @@ html{
 .acBox-top-l .list{
     /*border: 1px solid #ffa200;
     box-shadow: 0 0 10px #ffa200;*/
+    margin-top: 0.4vw;
+}
+.acBox-top-l{
+    margin-top: 0.4vw;
 }
 .acBox-top-l .list-li{
     /*border-bottom: 1px solid #ffa200;*/
@@ -96,7 +100,7 @@ html{
 }
 .matrix-li{
     width: 100%;
-    height: 5vh;
+    height: 6.7vh;
     /* border: 1px solid #fff; */
     position: relative;
 }
@@ -106,7 +110,7 @@ html{
     text-shadow: 0 0 30px #07e7f7,
 }
 .matrix-l .matrix-li:first-child{
-    margin-top: 2.5vh;
+    margin-top: 3.55vh;
 }
 .matrix-l .matrix-li{
     text-align: right;
@@ -157,7 +161,7 @@ html{
 }
 .matrix-r .matrix-li{
     text-align: left;
-    line-height: 5vh;
+    line-height: 5.5vh;
     font-size: 0.8vw;
     padding-left: 0.4vw;
 }
@@ -306,7 +310,7 @@ html{
     z-index: 10;
 }
 .short-l p{
-    font-size: 0.6vw;
+    font-size: 0.7vw;
     height: 2vh;
 }
 .short-r{
@@ -360,16 +364,16 @@ html{
 
 .acBox-top-lt img{
     margin-left: 5px;
-    height: 4.5vh;
+    height: 7vh;
     margin-top: 0.3vh;
     margin-bottom: 0;
 }
 .ac-img{
-    width: 3vw;
+    width: 3.1vw;
 }
 .acBox-top-lt{
-    height: 11vh;
-    padding-top: 3vh;
+    height: 10.4vh;
+    padding-top: 1.6vh;
 }
 .imgbox-r h2{
     font-size: 0.9vw;
@@ -391,6 +395,7 @@ html{
 
 .activeBox .title-h4{
     padding-left: 0.2vw;
+    clear: left;
 }
 
 .activeBox a:hover,.clueBox a:hover,.wbwxBox a:hover{
@@ -489,4 +494,288 @@ html{
 
 .yqTab .listBox1{
     height: 13.5vw !important;
+}
+
+.modal-map.xwdt{
+    background: url(../../img/mapNews.jpg) center center no-repeat;
+    background-size: cover;
+    width: 72vw;
+    height: 92vh;
+}
+
+.xwText h1{
+    font-size: 0.9vw;
+}
+
+.xwText h2{
+    line-height: unset;
+}
+
+.xwText a.wt{
+    font-size: 0.6vw;
+    margin-top: 0.2vw;
+    width: 6.3vw;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.xwText a.wt:hover{
+    color: #ffa200;
+}
+
+.xw1{
+    position: absolute;
+    left: 59vw;
+    top: 21vw;
+    z-index: 101;
+}
+
+.xw2{
+    position: absolute;
+    left: 36.5vw;
+    top: 6.2vw;
+    z-index: 101;
+}
+
+.xw3{
+    position: absolute;
+    left: 54.6vw;
+    top: 16.1vw;
+    z-index: 101;
+}
+
+.xw4{
+    position: absolute;
+    left: 59.1vw;
+    top: 11vw;
+    z-index: 101;
+}
+
+.xw5{
+    position: absolute;
+    left: 52vw;
+    top: 6.2vw;
+    z-index: 101;
+}
+
+.xw6{
+    position: absolute;
+    left: 59vw;
+    top: 26vw;
+    z-index: 101;
+}
+
+.xw7{
+    position: absolute;
+    left: 59vw;
+    top: 31.1vw;
+    z-index: 101;
+}
+
+.xw8{
+    position: absolute;
+    left: 51.2vw;
+    top: 26vw;
+    z-index: 101;
+}
+
+.xw9{
+    position: absolute;
+    left: 59vw;
+    top: 36.3vw;
+    z-index: 101;
+}
+
+.xw10{
+    position: absolute;
+    left: 59vw;
+    top: 41.5vw;
+    z-index: 101;
+}
+
+.xw11{
+    position: absolute;
+    left: 51.2vw;
+    top: 21vw;
+    z-index: 101;
+}
+
+.xw12{
+    position: absolute;
+    left: 44.3vw;
+    top: 6.2vw;
+    z-index: 101;
+}
+
+.xw13{
+    position: absolute;
+    left: 20.5vw;
+    top: 26.1vw;
+    z-index: 101;
+}
+
+.xw14{
+    position: absolute;
+    left: 27.6vw;
+    top: 46.7vw;
+    z-index: 101;
+}
+
+.xw15{
+    position: absolute;
+    left: 43.3vw;
+    top: 46.7vw;
+    z-index: 101;
+}
+
+.xw16{
+    position: absolute;
+    left: 35.4vw;
+    top: 46.7vw;
+    z-index: 101;
+}
+
+.xw17{
+    position: absolute;
+    left: 20.5vw;
+    top: 21.2vw;
+    z-index: 101;
+}
+
+.xw18{
+    position: absolute;
+    left: 22.3vw;
+    top: 36.2vw;
+    z-index: 101;
+}
+
+.xw19{
+    position: absolute;
+    left: 19.6vw;
+    top: 41.6vw;
+    z-index: 101;
+}
+
+.xw20{
+    position: absolute;
+    left: 28.4vw;
+    top: 11.3vw;
+    z-index: 101;
+}
+
+.xw21{
+    position: absolute;
+    left: 20.5vw;
+    top: 11.3vw;
+    z-index: 101;
+}
+
+.xw22{
+    position: absolute;
+    left: 20.5vw;
+    top: 16.2vw;
+    z-index: 101;
+}
+
+.xw23{
+    position: absolute;
+    left: 51.2vw;
+    top: 36.3vw;
+    z-index: 101;
+}
+
+.xw24{
+    position: absolute;
+    left: 44.3vw;
+    top: 11.3vw;
+    z-index: 101;
+}
+
+.xw24 h1{
+    color: #ffa200;
+}
+
+.xw24 i{
+    margin-right: 0.2vw;
+}
+
+.xw25{
+    position: absolute;
+    left: 62.3vw;
+    top: 16.1vw;
+    z-index: 101;
+}
+
+.xw26{
+    position: absolute;
+    left: 51.2vw;
+    top: 31.1vw;
+    z-index: 101;
+}
+
+.xw27{
+    position: absolute;
+    left: 24.2vw;
+    top: 31.1vw;
+    z-index: 101;
+}
+
+.xw28{
+    position: absolute;
+    left: 27.6vw;
+    top: 41.6vw;
+    z-index: 101;
+}
+
+.xw29{
+    position: absolute;
+    left: 36.5vw;
+    top: 11.3vw;
+    z-index: 101;
+}
+
+.xw30{
+    position: absolute;
+    left: 12.5vw;
+    top: 26.1vw;
+    z-index: 101;
+}
+
+.xw31{
+    position: absolute;
+    left: 28.4vw;
+    top: 16.2vw;
+    z-index: 101;
+}
+
+.xw32{
+    position: absolute;
+    left: 12.4vw;
+    top: 16.2vw;
+    z-index: 101;
+}
+
+.xw33{
+    position: absolute;
+    left: 51.2vw;
+    top: 41.5vw;
+    z-index: 101;
+}
+
+.xw34{
+    position: absolute;
+    left: 43.3vw;
+    top: 41.5vw;
+    z-index: 101;
+}
+
+.xwdt .starlight{
+    position: absolute;
+    left: 18vw;
+    top: 21vh;
+    width: 39vw;
+    height: 49vh;
+    z-index: 100;
 }

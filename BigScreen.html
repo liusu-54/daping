@@ -1503,14 +1503,14 @@
 
     /*区块链点击*/
 $('.qkBlock').click((e)=>{
-    
+
     $('.mask').css("display","block")
     var qkid = $(e.target).attr('id');
     alert(qkid)
     var str = '';
-    str = '<embed class="qkl-pdf" src="'+qkid+'" />'  //加号内放 psd 的 src 
+    str = '<embed class="qkl-pdf" src="'+qkid+'" />'  //加号内放 psd 的 src
     $("#qkl-modalbox").html(str)
-   
+
     $('.modal-qkl').fadeIn()
 })
 $('.mask').click(()=>{

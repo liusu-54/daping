@@ -658,35 +658,35 @@
                     <img src="./assets/img/dh1.gif" alt="">
                     <div class="shortText">智能采集</div>
                     <div class="short-lbox">
-                        <div class="short-lbox-item short-item1">
+                        <div class="short-lbox-item short-item1" data-imgid="1">
                             <p>5G视频直播/录播</p>
                             <div class="sitem1-bg s1"></div>
                         </div>
-                        <div class="short-lbox-item short-item2">
+                        <div class="short-lbox-item short-item2" data-imgid="2">
                             <p>5G+VR直播/录播</p>
                             <div class="sitem1-bg s2"></div>
                         </div>
                     </div>
                     <div class="short-lbox">
-                        <div class="short-lbox-item short-item3">
+                        <div class="short-lbox-item short-item3" data-imgid="3">
                             <p>手机直播/录播</p>
                             <div class="sitem1-bg s3"></div>
                         </div>
-                        <div class="short-lbox-item short-item4">
+                        <div class="short-lbox-item short-item4" data-imgid="4">
                             <p>内容推送</p>
                             <div class="sitem1-bg s4"></div>
                         </div>
                     </div>
                     <div class="short-lbox">
-                        <div class="short-lbox-item short-item5">
+                        <div class="short-lbox-item short-item5" data-imgid="5">
                             <p>电视信号截取</p>
                             <div class="sitem1-bg s5"></div>
                         </div>
-                        <div class="short-lbox-item short-itemz">
+                        <div class="short-lbox-item short-itemz" data-imgid="6">
                             <p>合作支持</p>
                             <div class="sitem1-bg s6"></div>
                         </div>
-                        <div class="short-lbox-item short-item6">
+                        <div class="short-lbox-item short-item6" data-imgid="7">
                             <p>热点追踪</p>
                             <div class="sitem1-bg s7"></div>
                         </div>
@@ -1458,6 +1458,7 @@
 
 
     <div class="mask"></div>
+    <div class="mask-img"></div>
     <div class="modal-qkl">
         <div class="qkl-modaltitle">文字稿件</div>
         <div class="qkl-modalbox">
@@ -1470,6 +1471,12 @@
         <div class="hidemisk"></div>
         <iframe src="https://dp.hzfanews.com/prd/dazhongrb/sidenews.aspx?id=2031" frameborder="0" class="modal-mapif"></iframe>
     </div>
+    <div class="modal-img">
+        <div class="m-img-box">
+            <img src="./assets/img/animg/1.png" alt="">
+        </div>
+        <img class="img-close" src="./assets/img/guanbi.png" alt="">
+    </div>
   </body>
 
 <!-- BEGIN: PAGE SCRIPTS -->
@@ -1481,6 +1488,24 @@
 
 <!-- 大屏JS -->
 <script src="assets/admin-tools/js/BigScreen.js"></script>
+
+<script>
+$('.short-lbox-item').click((e)=>{
+
+    var dataImgid = e.currentTarget.attributes[1].value;
+    
+    // console.log(dataImgid)
+    var str = '';
+    str = ' <img src="./assets/img/animg/'+dataImgid+'.png" alt="">'  //加号内放 psd 的 src 
+    $(".m-img-box").html(str)
+    $('.mask-img').css("display","block")
+    $('.modal-img').fadeIn()
+})
+$('.img-close').click(()=>{
+    $('.mask-img').css("display","none")
+    $('.modal-img').fadeOut()
+})
+</script>
 <script>
     $('.matrix-li').click((e)=>{
         var rmtjz = $(e.target).attr('id');

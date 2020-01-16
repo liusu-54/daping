@@ -665,3 +665,16 @@ ul.ds li p span {
 #tcWin{
   background-color: white;
 }
+
+.cb2 .tch-box {
+  padding: 9.9vh 9vw;
+}
+
+#tcWin iframe{
+  transform: scale(1.3);
+}
+
+.video-box .video-container {
+    width: 60vw !important;
+    height: 38vw;
+}

@@ -1517,13 +1517,14 @@ $('.img-close').click(()=>{
     })
 
     /*报纸点击*/
-    $("#paper").on('click',function(){
-        $('.qkl-pdf').attr("src",'');
-        var src = $(this).find('img').attr("data-url");
-        $('.qkl-pdf').attr("src",src);
-        $('.mask').css("display","block");
-        $('.modal-qkl').fadeIn();
-        $('.qkl-modaltitle').html("")
+    $(".news-img").on('click',function(){
+        $('.mask').css("display","block")
+        var qkid = 'assets/img/01.pdf';
+        var str = '';
+        str = '<embed class="qkl-pdf" src="'+qkid+'" />'  //加号内放 psd 的 src
+        $("#qkl-modalbox").html(str)
+
+        $('.modal-qkl').fadeIn()
     });
 
     /*区块链点击*/

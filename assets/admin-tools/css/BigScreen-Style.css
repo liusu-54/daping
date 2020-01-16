@@ -299,7 +299,7 @@ html{
     left: 2vw;
 }
 
-.activeBox .title-h2:hover,.znNum .mpNum:hover{
+.activeBox .title-h2:hover,.clueBox .title-h2:hover,.znNum .mpNum:hover{
     cursor: pointer;
     color: white;
 }
@@ -1062,7 +1062,7 @@ html{
 
 .yqTabBox .qkBg .qkBlock .qkText h1{
     font-size: 0.7vw;
-    color: #f98307;
+    color: #fff;
     font-weight: normal;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -1559,4 +1559,13 @@ html{
 .bs-bg~.jzdt{
     display: block;
     opacity: 0;
+}
+
+.chartHeight10 {
+    height: 30vh;
+}
+
+.short-lbox-item:hover{
+    color: white;
+    cursor: pointer;
 }

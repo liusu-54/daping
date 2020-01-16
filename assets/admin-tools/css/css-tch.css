@@ -320,7 +320,7 @@ ul.ds li p span {
   background-size: contain;
   text-shadow: 0px 0px 15px #0b0f1b;
 }
-.titleh-first h5:before{
+/*.titleh-first h5:before{
    position: absolute;
    left: -17.8vw;
    display: block;
@@ -341,7 +341,7 @@ ul.ds li p span {
    top:0.2vh;
    background: url(../../img/title-right.png) center left no-repeat;
    background-size: contain;
-}
+}*/
 /*列表*/
 
 /*正负面图标*/
@@ -523,6 +523,18 @@ ul.ds li p span {
         text-overflow: ellipsis;
       }
 
+      .jg{
+          position: fixed;
+          padding-top: 5vw;
+      }
+
+      .jg .tab-content{
+          width: 100%;
+      }
+
+    .jg .tab-content .jigou-box{
+        width: 100%;
+    }
 
 /*选项卡*/
 .tab-button-list{

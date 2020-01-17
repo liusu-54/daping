@@ -41,7 +41,7 @@ html{
     -webkit-line-clamp: 2;
 }
 .wbwxBox .hei4{
-    height: 16vh !important;
+    height: 14.8vh !important;
 }
 .acBox-top-l .list{
     /*border: 1px solid #ffa200;
@@ -443,8 +443,8 @@ html{
     box-shadow: 0 0 3vw #ccc;
 }
 .qkl-modalbox{
-    width: 70%;
-    height: 75vh;
+    width: 75%;
+    height: 87vh;
     margin: 0 auto;
     /* border: 1px solid #fff; */
     /* margin-top: 8vh; */
@@ -478,7 +478,7 @@ html{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 80vw;
-    height: 85vh;
+    height: 96vh;
     background-color: #ccc;
     z-index: 1000;
     box-shadow: 0 0 3vw #ccc;
@@ -570,6 +570,20 @@ html{
 .xwText li.wt:hover{
     color: #ffa200;
     cursor: pointer;
+}
+
+.mapChoose{
+    font-size: 1.1vw;
+    margin: 0.5vw;
+}
+
+.mapChoose span{
+    margin: 0 0.2vw;
+    cursor: pointer;
+}
+
+.mapChoose .active{
+    color: #ffa200;
 }
 
 .xw1{

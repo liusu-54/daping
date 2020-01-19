@@ -1566,7 +1566,8 @@ $('.mapBtn2').click(()=>{
     var map = new AMap.Map("mapcontainer", 
     {
         resizeEnable: true,
-        mapStyle: "amap://styles/blue"
+        mapStyle: "amap://styles/blue",
+        zoom: 10 //地图显示的缩放级别
     });
     
     var lnglats = [
@@ -1604,8 +1605,15 @@ $('.mapBtn2').click(()=>{
 
     var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
     for (var i = 0, marker; i < lnglats.length; i++) {
+        var icon = new AMap.Icon({
+            size: new AMap.Size(40, 40),
+            image: './assets/img/dw.png',
+            imageSize: new AMap.Size(40, 40) 
+        });
+
         var marker = new AMap.Marker({
             position: lnglats[i].pos,
+            icon: icon,
             map: map
         });
 
@@ -1631,7 +1639,6 @@ $('.mapBtn2').click(()=>{
         var n = num++
         infoWindow.setContent('<div id="infoWindow"><div class="map-title">'+lnglats[n].title+'</div><div class="map-loca">'+lnglats[n].loca+'</div><div class="map-loca">'+lnglats[n].adress+'</div><div class="map-loca">'+lnglats[n].date+'</div></div>');
        
-        // map.panTo(lnglats[num++].pos);
         map.panTo(lnglats[n].pos);
         infoWindow.open(map, lnglats[n].pos);
         if(num>=lnglats.length){
@@ -1644,9 +1651,8 @@ $('.mapBtn2').click(()=>{
     }
 
     clock = setInterval(openInfo, 5000); //一秒执行一次
-    // setTimeout(openInfo,1000);
 
-    map.setFitView();
+    map.setFitView();显示
 })
 
 

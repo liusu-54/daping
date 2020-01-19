@@ -483,6 +483,13 @@ html{
     z-index: 1000;
     box-shadow: 0 0 3vw #ccc;
 }
+.modal-map{
+    width: 70vw;
+    height: 80vh;
+    padding: 2vw;
+    box-sizing: border-box;
+    background-color: rgba(38,47,60,1);
+}
 .modal-img{
     width: 60vw;
     height: 70vh;
@@ -839,4 +846,25 @@ html{
     width: 39vw;
     height: 49vh;
     z-index: 100;
+}
+
+
+.amap-info-content{
+    background-color: rgba(0,0,0,0.4);
+    width: 20vw;
+    height: 16vh;
+    color: #fff;
+    border-left: 0.5vw solid rgba(157,213,0,1);
+}
+.map-title{
+    width: 100%;
+    line-height: 4vh;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.map-loca{
+    width: 100%;
+    line-height: 3vh;
+    font-size: 0.5vw;
+    color: #9DD500;
 }

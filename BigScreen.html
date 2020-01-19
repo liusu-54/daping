@@ -25,6 +25,10 @@
 
   <script src="vendor/plugins/jquery.numscroll.js"></script>
   <script src="echarts/shandong.js"></script>
+  <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+  <script type="text/javascript"
+          src="https://webapi.amap.com/maps?v=1.4.15&key=e84ec0fcadebf298f349546e1c433530"></script>
+  <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
 
     <!-- 翻转 -->
     <link rel="stylesheet" type="text/css" href="assets/admin-tools/css/component.css" />
@@ -1468,8 +1472,10 @@
         </div>
     </div>
     <div class="modal-map">
-        <div class="hidemisk"></div>
-        <iframe src="https://dp.hzfanews.com/prd/dazhongrb/sidenews.aspx?id=2031" frameborder="0" class="modal-mapif"></iframe>
+        <img class="img-close" src="./assets/img/guanbi.png" alt="">
+        <!-- <div class="hidemisk"></div> -->
+        <!-- <iframe src="https://dp.hzfanews.com/prd/dazhongrb/sidenews.aspx?id=2031" frameborder="0" class="modal-mapif"></iframe> -->
+        <div id="mapcontainer" style="width: 100%; height: 100%;"></div>
     </div>
     <div class="modal-img">
         <div class="m-img-box">
@@ -1488,7 +1494,11 @@
 
 <!-- 大屏JS -->
 <script src="assets/admin-tools/js/BigScreen.js"></script>
+<script>
+    
+    
 
+</script>
 <script>
 $('.short-lbox-item').click((e)=>{
 
@@ -1503,7 +1513,9 @@ $('.short-lbox-item').click((e)=>{
 })
 $('.img-close').click(()=>{
     $('.mask-img').css("display","none")
+    $('.mask').css("display","none")
     $('.modal-img').fadeOut()
+    $('.modal-map').fadeOut()
 })
 </script>
 <script>
@@ -1546,9 +1558,95 @@ $('.mask').click(()=>{
     $('.modal-map').fadeOut()
 })
 
+/*map***************************************/
 $('.mapBtn2').click(()=>{
     $('.mask').css("display","block")
     $('.modal-map').fadeIn()
+    //初始化地图对象，加载地图
+    var map = new AMap.Map("mapcontainer", 
+    {
+        resizeEnable: true,
+        mapStyle: "amap://styles/blue"
+    });
+    
+    var lnglats = [
+        {
+            title: "国网济南市章丘区供电公司1",
+            loca: "济南经十路",
+            adress: "济南市历下区",
+            date: "2020-1-19 13:20:21",
+            pos: [116.368904, 39.923423],
+        },
+        {
+            title: "国网济南市章丘区供电公司2",
+            loca: "济南市",
+            adress: "济南市历城区",
+            date: "2020-1-19 13:20:21",
+            pos: [116.382122, 39.921176],
+        },
+        {
+            title: "国网济南市章丘区供电公司3",
+            loca: "长清区",
+            adress: "济南市长清区",
+            date: "2020-1-19 13:20:21",
+            pos: [116.387271, 39.922501],
+        },
+        {
+            title: "国网济南市章丘区供电公司4",
+            loca: "章丘区",
+            adress: "济南市章丘区",
+            date: "2020-1-19 13:20:21",
+            pos: [116.398258, 39.914600],
+        }
+       
+        
+    ];
+
+    var infoWindow = new AMap.InfoWindow({offset: new AMap.Pixel(0, -30)});
+    for (var i = 0, marker; i < lnglats.length; i++) {
+        var marker = new AMap.Marker({
+            position: lnglats[i].pos,
+            map: map
+        });
+
+        var str = '<div id="infoWindow2"><div class="map-title">'+lnglats[i].title+'</div><div class="map-loca">'+lnglats[i].loca+'</div><div class="map-loca">'+lnglats[i].adress+'</div><div class="map-loca">'+lnglats[i].date+'</div></div>'
+        marker.content = str;
+        marker.ti = lnglats[i].title
+        marker.on('click', markerClick);
+        marker.emit('click', {target: marker});
+    }
+    function markerClick(e) {
+        infoWindow.setContent(e.target.content);
+        infoWindow.open(map, e.target.getPosition());
+        $('#infoWindow2').click(function(){
+            alert(e.target.ti)
+        })
+    }
+
+
+    var num = 0;
+
+    function openInfo(){
+
+        var n = num++
+        infoWindow.setContent('<div id="infoWindow"><div class="map-title">'+lnglats[n].title+'</div><div class="map-loca">'+lnglats[n].loca+'</div><div class="map-loca">'+lnglats[n].adress+'</div><div class="map-loca">'+lnglats[n].date+'</div></div>');
+       
+        // map.panTo(lnglats[num++].pos);
+        map.panTo(lnglats[n].pos);
+        infoWindow.open(map, lnglats[n].pos);
+        if(num>=lnglats.length){
+            num=0
+        }
+
+        AMap.event.addDomListener(document.getElementById('infoWindow'), 'click', function() {
+            alert(lnglats[n].title)
+        });
+    }
+
+    clock = setInterval(openInfo, 5000); //一秒执行一次
+    // setTimeout(openInfo,1000);
+
+    map.setFitView();
 })
 
 
